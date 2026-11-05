@@ -6,7 +6,7 @@ name: Submission check
 on:
   pull_request:
     types: [opened, synchronize, reopened, edited]
-    paths: ["submissions/**"]
+    paths: ["submissions/*/**"]
 
 permissions:
   contents: read
@@ -18,6 +18,8 @@ concurrency:
 
 jobs:
   check:
+    # Participants submit from forks; organizer branches in this repository are skipped.
+    if: ${{ github.event.pull_request.head.repo.full_name != github.repository }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
