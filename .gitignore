@@ -1,0 +1,13 @@
+# Dataset: downloaded at kickoff with starter/scripts/get_data.py
+starter/data/
+*.zip
+# Python and notebooks
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+# Never commit answer keys or local scoring inputs
+*ANSWER_KEY*
+key.json
+prs.json
+.DS_Store
