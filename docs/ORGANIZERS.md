@@ -10,11 +10,11 @@ Everything here is done by Bluestaq organizers with write access. Participants n
 4. **Dataset.** Confirm the draft release **Straight Rows dataset** has `StraightRows_Student_Package.zip` attached, and that its checksum matches `starter/DATASET_SHA256`.
 5. **Branch protection.** `main` requires a pull request and a passing **Tests** check, applies to administrators, and blocks force pushes and deletion. Organizers merge submission pull requests; no approving review is required.
 
-## Kickoff (hour 0)
+## Kickoff (Friday, Nov 13, 4:00 pm CT · hour 0)
 
 - Publish the draft release. `starter/scripts/get_data.py` and the "latest release" download link start working immediately.
 
-## Lock (hour 22)
+## Deadline (Saturday, Nov 14, 4:00 pm CT · hour 24)
 
 - Participants open one pull request each. The **Submission check** validates format without running participant code.
 - Review each pull request. Merge those that pass and touch only `submissions/<handle>/submission.json`. Do not merge late submissions. The check fails any pull request opened, pushed to, or reopened after the deadline, and the scorer excludes late entries.

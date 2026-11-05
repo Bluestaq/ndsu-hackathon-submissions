@@ -2,7 +2,7 @@
 
 **"My tractor is drifting. Is it the Sun, an adversary, or my own hardware?"**
 
-Straight Rows is an individual, 24-hour challenge for NDSU undergraduates. You build software that detects degraded GPS guidance on a simulated three-tractor fleet near Casselton, North Dakota. It attributes the cause (space weather, jamming, spoofing, equipment fault, or multipath) using farm telemetry and Space Domain Awareness feeds, then recommends an action with evidence a person can check.
+Straight Rows is an individual challenge for NDSU undergraduates, with a 24-hour build from Friday, November 13 at 4:00 pm CT to Saturday, November 14 at 4:00 pm CT. You build software that detects degraded GPS guidance on a simulated three-tractor fleet near Casselton, North Dakota. It attributes the cause (space weather, jamming, spoofing, equipment fault, or multipath) using farm telemetry and Space Domain Awareness feeds, then recommends an action with evidence a person can check.
 
 One winner receives **both a paid summer internship at Bluestaq headquarters in Colorado Springs and a full one-year scholarship that pays tuition.** Standard internship eligibility and hiring requirements apply to the internship.
 
@@ -26,9 +26,9 @@ python submission/baseline.py --data data --output submission.json \
 python submission/validate_submission.py submission.json
 ```
 
-Build your solution in **your own private repository** (copy `starter/` into it). Keep it private until hour 22.
+Build your solution in **your own private repository** (copy `starter/` into it). Keep it private until you submit.
 
-## Submitting at hour 22
+## Submitting by the deadline
 
 1. Make your solution repository public.
 2. Fork this repository and add **one file**: `submissions/<your-github-username>/submission.json`.
@@ -43,7 +43,7 @@ An automatic check validates the file's format. It never runs your code. Full in
 | Path | Contents |
 |---|---|
 | `starter/` | Official guide, starter notebook, baseline, validator, and template. The dataset downloads into `starter/data/` at kickoff. |
-| `submissions/` | One folder per participant, added by pull request at hour 22. |
+| `submissions/` | One folder per participant, added by pull request before the deadline. |
 | `scoring/` | The published automated diagnostic (`score_submission.py`), the batch scorer, and tests. The answer key is not in this repository. |
 | `results/` | `results.json`, published after scoring. |
 | `site/` | The event website. |
@@ -53,7 +53,7 @@ An automatic check validates the file's format. It never runs your code. Full in
 
 - Individual work. Collaboration between competitors and sharing solutions are prohibited.
 - Any language, internet resources, and AI coding assistants are allowed. You must understand and defend what you submit.
-- Code and results lock at hour 22. Demonstrations (five minutes plus three minutes of Q&A) and judging fill the final two hours.
+- Code and results lock at 4:00 pm CT Saturday (hour 24). Demonstrations (five minutes plus three minutes of Q&A) and judging follow.
 - Judges score the 100-point rubric in the guide. The automated diagnostic is supporting evidence, not extra points.
 - Open to NDSU undergraduate students who are U.S. citizens. All challenge data is synthetic and unclassified.
 

@@ -6,4 +6,4 @@
 - [ ] My file contains **no email address or student ID**
 - [ ] I ran `python starter/submission/validate_submission.py submissions/<my-github-username>/submission.json` and it printed `OK`
 
-The automatic check validates format only. Scoring runs after the lock at hour 22.
+The automatic check validates format only. Scoring runs after the deadline (Saturday, November 14, 4:00 pm CT).
