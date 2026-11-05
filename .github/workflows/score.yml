@@ -1,0 +1,67 @@
+# Organizers only: score merged submissions after the lock and push a results branch.
+# (The Bluestaq organization does not allow Actions to open pull requests, so the job
+# summary links to a one-click pull request instead.)
+# Requires the ANSWER_KEY_JSON repository secret. The key is written to a temp
+# file, used, deleted, and never printed or committed.
+name: Score submissions
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "score" to confirm that all valid submission PRs are merged'
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: scoring
+  cancel-in-progress: false
+
+jobs:
+  score:
+    if: ${{ inputs.confirm == 'score' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect submission pull requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr list --repo "$GITHUB_REPOSITORY" --state all --limit 1000 --json number,author,createdAt,mergedAt,state,files,url > "$RUNNER_TEMP/prs.json"
+      - name: Score
+        env:
+          ANSWER_KEY_JSON: ${{ secrets.ANSWER_KEY_JSON }}
+          SUBMISSION_LOCK_UTC: ${{ vars.SUBMISSION_LOCK_UTC }}
+          SUBMISSION_GRACE_MINUTES: ${{ vars.SUBMISSION_GRACE_MINUTES }}
+        run: |
+          test -n "$ANSWER_KEY_JSON" || { echo "::error::ANSWER_KEY_JSON secret is not set"; exit 1; }
+          key="$RUNNER_TEMP/key.json"
+          printf '%s' "$ANSWER_KEY_JSON" > "$key"
+          python scoring/score_all.py --submissions submissions --key "$key" --prs "$RUNNER_TEMP/prs.json" \
+            --lock-utc "$SUBMISSION_LOCK_UTC" --grace-minutes "${SUBMISSION_GRACE_MINUTES:-0}" --output results/results.json
+          rm -f "$key"
+      - name: Push results branch
+        run: |
+          branch="results/run-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add results/results.json
+          git commit -m "Publish Straight Rows diagnostic results (run ${GITHUB_RUN_ID})"
+          git push origin "$branch"
+          url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/compare/main...${branch}?expand=1&title=Publish%20diagnostic%20results"
+          {
+            echo "## Diagnostic results are ready"
+            echo ""
+            echo "Branch \`${branch}\` contains the updated \`results/results.json\`."
+            echo ""
+            echo "**[Open the results pull request](${url})**, review it, then merge to publish the results page."
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda · Straight Rows Hackathon</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Straight Rows: a Bluestaq × NDSU hackathon on precision agriculture and Space Domain Awareness.">
+<style>
+:root{--bg:#f5f5f7;--card:#fff;--ink:#1d1d1f;--gray:#616166;--blue:#0066cc;--pale:#e8f2ff;--edge:#d2d2d7;--green:#0a5640}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:var(--blue)}a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+header{background:#fffffff2;border-bottom:1px solid var(--edge);position:sticky;top:0;z-index:5;backdrop-filter:saturate(180%) blur(12px)}
+.bar{max-width:1080px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.logos{display:flex;align-items:center;gap:14px;margin-right:auto}.logos img{display:block}.logos span{width:1px;height:28px;background:var(--edge)}
+nav a{color:var(--ink);text-decoration:none;padding:8px 10px;border-radius:9px;font-size:15px}nav a:hover{background:#ededf0}
+nav a[aria-current=page]{color:var(--blue);background:var(--pale);font-weight:600}
+main{max-width:1080px;margin:0 auto;padding:40px 24px 64px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--gray);text-transform:uppercase;margin:0 0 8px}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.05;margin:0 0 16px;letter-spacing:-.02em}
+h2{font-size:28px;line-height:1.2;margin:48px 0 14px;letter-spacing:-.01em}h3{font-size:19px;margin:0 0 6px}
+.lead{font-size:21px;color:var(--gray);max-width:760px;margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border-radius:18px;padding:22px 22px 18px;box-shadow:0 1px 2px #0000000d}
+.card p{margin:4px 0 0;color:var(--gray);font-size:15.5px}
+.big{font-size:34px;font-weight:700;color:var(--blue);line-height:1.1}
+.cta{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:12px;margin:4px 10px 4px 0}
+.cta.secondary{background:var(--pale);color:var(--blue)}
+.timeline{list-style:none;padding:0;margin:0;border-left:3px solid var(--pale)}
+.timeline li{position:relative;padding:0 0 22px 26px}.timeline li:before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--blue)}
+.timeline .when{font-weight:700;color:var(--blue);font-size:15px;text-transform:uppercase;letter-spacing:.04em}
+ol.steps{padding-left:22px}ol.steps li{margin:0 0 14px}
+pre{background:#1d1d1f;color:#f5f5f7;padding:16px 18px;border-radius:14px;overflow-x:auto;font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace}
+code{font:0.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:#e9e9ee;padding:1px 5px;border-radius:5px}pre code{background:none;padding:0}
+.note{background:var(--pale);border-radius:14px;padding:14px 18px;margin:18px 0}
+.warn{background:#fff4e5;border-radius:14px;padding:14px 18px;margin:18px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;font-size:15.5px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid #ececf0}th{background:#fafafc;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--gray)}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.frame{width:100%;aspect-ratio:16/10;border:0;border-radius:16px;background:#fff;box-shadow:0 2px 16px #0000001a}
+footer{border-top:1px solid var(--edge);color:var(--gray);font-size:14px}footer .bar{padding:24px}
+.scroll{overflow-x:auto;border-radius:16px}
+@media (max-width:720px){nav{width:100%;overflow-x:auto;white-space:nowrap}.lead{font-size:18px}.logos img:first-child{height:20px}.logos img:last-child{height:17px}main{padding:28px 18px 48px}.bar{padding:10px 18px}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logos" href="index.html" aria-label="Straight Rows home"><img src="assets/bluestaq_logo.png" alt="Bluestaq" height="26"><span></span><img src="assets/ndsu_logo.png" alt="North Dakota State University" height="22"></a>
+<nav aria-label="Main"><a href="index.html" aria-current="page">Agenda</a><a href="opening-remarks.html">Opening remarks</a><a href="get-started.html">Get started</a><a href="submit.html">Submit</a><a href="results.html">Results</a><a href="assets/Bluestaq_NDSU_Straight_Rows_Hackathon_Official.pdf">Guide (PDF)</a></nav>
+</div></header>
+<main>
+<p class="eyebrow">Bluestaq × NDSU · Individual · 24 hours</p>
+<h1>Straight Rows Hackathon</h1>
+<p class="lead">“My tractor is drifting. Is it the Sun, an adversary, or my own hardware?” Build software that detects degraded GPS guidance, attributes its cause using farm telemetry and Space Domain Awareness feeds, and recommends an action a person can check.</p>
+<a class="cta" href="get-started.html">Get started</a><a class="cta secondary" href="opening-remarks.html">Opening remarks</a><a class="cta secondary" href="assets/Bluestaq_NDSU_Straight_Rows_Hackathon_Official.pdf">Official guide (PDF)</a>
+<div class="grid" style="margin-top:28px">
+  <div class="card"><div class="big" id="ev-date">To be announced</div><p>Date</p></div>
+  <div class="card"><div class="big" id="ev-kickoff">Hour 0</div><p>Kickoff and dataset release</p></div>
+  <div class="card"><div class="big" id="ev-lock">Hour 22</div><p>Code and results lock; submit by pull request</p></div>
+  <div class="card"><div class="big" style="font-size:24px" id="ev-location">NDSU campus</div><p>Location</p></div>
+</div>
+<h2>Agenda</h2>
+<ol class="timeline">
+  <li><div class="when">Before the event</div><h3>Get ready</h3><p>Register with Bluestaq University Programs. Have a GitHub account, Git, and Python 3.11+ ready. <a href="get-started.html">Setup steps</a>.</p></li>
+  <li><div class="when">Hour 0</div><h3>Kickoff and opening remarks</h3><p>Welcome from Bluestaq, “Food security is national security,” and the challenge. The dataset is released. <a href="opening-remarks.html">Slides</a>.</p></li>
+  <li><div class="when">Hour 0–1</div><h3>First working result</h3><p>Download the data, run the baseline, validate it, and inspect a labeled episode.</p></li>
+  <li><div class="when">Hour 1–22</div><h3>Build</h3><p>Improve detection, attribution, actions, confidence, and evidence. Bluestaq staff are on hand for questions.</p></li>
+  <li><div class="when">Hour 22</div><h3>Lock and submit</h3><p>Make your solution repository public and open one pull request with your <code>submission.json</code>. <a href="submit.html">How to submit</a>.</p></li>
+  <li><div class="when">Hour 22–24</div><h3>Demonstrations and judging</h3><p>Five-minute demo plus three minutes of Q&amp;A. Judges score the published 100-point rubric.</p></li>
+  <li><div class="when">After judging</div><h3>Results</h3><p>The automated diagnostic is posted on the <a href="results.html">results page</a>, and the judges announce the winner.</p></li>
+</ol>
+<h2>The award</h2>
+<div class="grid">
+  <div class="card"><h3>Paid summer internship</h3><p>At Bluestaq headquarters in Colorado Springs. Standard internship eligibility and hiring requirements apply.</p></div>
+  <div class="card"><h3>Full one-year scholarship</h3><p>Tuition paid for one year. One winner receives both awards.</p></div>
+  <div class="card"><h3>Who can compete</h3><p>NDSU undergraduate students who are U.S. citizens. No prior GNSS experience is needed.</p></div>
+</div>
+<p class="note" id="ev-extra" hidden></p>
+<script>
+fetch('event.json').then(r=>r.ok?r.json():null).then(e=>{if(!e)return;
+for(const [id,key] of [['ev-date','date'],['ev-kickoff','kickoff'],['ev-lock','lock'],['ev-location','location']]){if(e[key])document.getElementById(id).textContent=e[key];}
+if(e.announcement){const n=document.getElementById('ev-extra');n.textContent=e.announcement;n.hidden=false;}}).catch(()=>{});
+</script>
+</main>
+<footer><div class="bar">Straight Rows Hackathon · Bluestaq × North Dakota State University · Questions: <a href="mailto:universityprograms@bluestaq.com">universityprograms@bluestaq.com</a> · <a href="https://github.com/Bluestaq/ndsu-hackathon-submissions">Repository</a></div></footer>
+</body>
+</html>

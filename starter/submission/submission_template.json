@@ -1,0 +1,23 @@
+{
+ "participant": {
+  "github_handle": "your-github-username",
+  "display_name": "Optional name for the results page"
+ },
+ "repository_url": "https://github.com/your-github-username/your-solution-repo",
+ "detections": [
+  {
+   "start": "2026-05-06T00:00:00+00:00",
+   "end": "2026-05-06T00:10:00+00:00",
+   "tractors": [
+    "T1"
+   ],
+   "class": "JAMMING",
+   "action": "HALT_AND_REPORT",
+   "confidence": 0.8,
+   "evidence": [
+    "describe the farm-side anomaly you saw",
+    "describe the space-side data that confirms or rules out alternatives"
+   ]
+  }
+ ]
+}

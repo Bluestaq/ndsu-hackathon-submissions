@@ -1,0 +1,24 @@
+# Tests the scorer, validator, PR checker and batch scorer on code changes.
+name: Tests
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["submissions/**", "results/**", "site/**"]
+  pull_request:  # runs on every PR so "test" can be a required check on main
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s scoring/tests -v

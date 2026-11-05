@@ -1,0 +1,46 @@
+# Checks the format of a submission pull request.
+# Security: participant code is never checked out or run. The checker comes from
+# the base branch and reads submission.json as data through the GitHub API.
+name: Submission check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+    paths: ["submissions/*/**"]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: submission-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    # Participants submit from forks; organizer branches in this repository are skipped.
+    if: ${{ github.event.pull_request.head.repo.full_name != github.repository }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out trusted base branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate submission
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          CREATED_AT: ${{ github.event.pull_request.created_at }}
+          EVENT_ACTION: ${{ github.event.action }}
+          SUBMISSION_LOCK_UTC: ${{ vars.SUBMISSION_LOCK_UTC }}
+          SUBMISSION_GRACE_MINUTES: ${{ vars.SUBMISSION_GRACE_MINUTES }}
+        run: python .github/scripts/check_submission_pr.py
