@@ -90,7 +90,7 @@ def check(env, fetch, validator):
         if len(parts) >= 5:
             repo = fetch(f"/repos/{parts[3]}/{parts[4]}", True)
             if repo is None or repo.get("private"):
-                errors.append(f"Your solution repository {url} is not public yet. Make it public at hour 22.")
+                errors.append(f"Your solution repository {url} is not public yet. Make it public before the deadline.")
             else:
                 lines.append(f"Solution repository is public: {url}")
     lock = env.get("SUBMISSION_LOCK_UTC", "").strip()

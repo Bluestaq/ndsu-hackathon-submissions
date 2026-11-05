@@ -1,12 +1,12 @@
 # Submitting your solution
 
-Submissions open at **hour 22**, when code and results lock.
+Submit before the deadline, when code and results lock (hour 24).
 
 **Deadline: Saturday, November 14, 2026 at 4:00 pm Central Time (Fargo, ND) — 22:00 UTC.** Pull requests opened or changed after the deadline are not accepted.
 
-## Before hour 22
+## Before you submit
 
-- Build in your own GitHub repository, and keep it **private** until hour 22.
+- Build in your own GitHub repository, and keep it **private** until you submit.
 - Its README must give exact setup and run commands, pinned dependencies, and the command that regenerates your `submission.json`.
 - Validate early and often:
 
@@ -14,7 +14,7 @@ Submissions open at **hour 22**, when code and results lock.
   python starter/submission/validate_submission.py path/to/submission.json
   ```
 
-## At hour 22
+## Submitting (before the deadline)
 
 1. **Make your solution repository public.** (Settings → General → Danger Zone → Change visibility.)
 2. **Fork** `Bluestaq/ndsu-hackathon-submissions` (the Fork button, top right).

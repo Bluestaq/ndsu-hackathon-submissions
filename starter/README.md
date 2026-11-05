@@ -3,9 +3,10 @@
 **Bluestaq University Programs, in partnership with North Dakota State University**
 
 Read `docs/Bluestaq_NDSU_Straight_Rows_Hackathon_Official.pdf` first. It is the
-**official event guide**. This package is released at kickoff for a 24-hour,
-individual competition. Submissions close at hour 22; demos and judging occupy
-the final two hours. Participation is restricted to NDSU undergraduate students
+**official event guide**. This package is released at kickoff for an
+individual competition with a 24-hour build, from Friday, November 13 at 4:00 pm
+CT to Saturday, November 14 at 4:00 pm CT. Submissions close at 4:00 pm Saturday
+(hour 24); demos and judging follow. Participation is restricted to NDSU undergraduate students
 who are U.S. citizens. Any language, internet resources, and AI coding assistants
 are allowed; collaboration between competitors is prohibited.
 
@@ -136,7 +137,7 @@ coincide with a regional storm. Use a separate detection for each distinct cause
 
 ## Deliverables and judging
 
-Submit by **hour 22**:
+Submit by **hour 24 (Saturday, November 14, 4:00 pm CT)**:
 
 1. `submission.json`, following the template and passing the validator.
 2. A repository link with source, pinned dependencies, exact reproduction
@@ -159,10 +160,13 @@ The automated diagnostic is supporting evidence for judges, not an extra
 rules, and recurrent-multipath exemption are published on page 4 of the PDF.
 Ties use mission relevance and decision quality, then technical execution.
 
-## Submitting at hour 22
+## Submitting by the deadline
 
-1. Build in your own GitHub repository and keep it private until hour 22.
-2. At hour 22, make your repository public.
+**Deadline: Saturday, November 14, 2026, 4:00 pm Central Time.** Pull requests
+opened or changed after the deadline are not accepted.
+
+1. Build in your own GitHub repository and keep it private until you submit.
+2. Before the deadline, make your repository public.
 3. Fork [Bluestaq/ndsu-hackathon-submissions](https://github.com/Bluestaq/ndsu-hackathon-submissions) and add exactly one file:
    `submissions/<your-github-username>/submission.json`.
 4. Open a pull request. Its opening time is your submission time. A check
