@@ -46,7 +46,7 @@ jobs:
           key="$RUNNER_TEMP/key.json"
           printf '%s' "$ANSWER_KEY_JSON" > "$key"
           python scoring/score_all.py --submissions submissions --key "$key" --prs "$RUNNER_TEMP/prs.json" \
-            --lock-utc "$SUBMISSION_LOCK_UTC" --grace-minutes "${SUBMISSION_GRACE_MINUTES:-10}" --output results/results.json
+            --lock-utc "$SUBMISSION_LOCK_UTC" --grace-minutes "${SUBMISSION_GRACE_MINUTES:-0}" --output results/results.json
           rm -f "$key"
       - name: Push results branch
         run: |

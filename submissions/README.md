@@ -1,6 +1,8 @@
 # Submitting your solution
 
-Submissions open at **hour 22**, when code and results lock. Your pull request's opening time is your submission time.
+Submissions open at **hour 22**, when code and results lock.
+
+**Deadline: Saturday, November 14, 2026 at 4:00 pm Central Time (Fargo, ND) — 22:00 UTC.** Pull requests opened or changed after the deadline are not accepted.
 
 ## Before hour 22
 
@@ -35,7 +37,7 @@ Submissions open at **hour 22**, when code and results lock. Your pull request's
    In the browser: in your fork, choose **Add file → Create new file**. Type `submissions/<your-github-username>/submission.json` as the name, paste your JSON, and commit to a new branch.
 
 4. **Open a pull request** to `Bluestaq/ndsu-hackathon-submissions` `main`, and complete the checklist.
-5. Wait for the **Submission check** to finish. If it fails, read the job summary, fix the file, and push again to the same branch. Your submission time stays the time you first opened the pull request.
+5. Wait for the **Submission check** to finish. If it fails, read the job summary, fix the file, and push again to the same branch **before the deadline**. Any push after 4:00 pm Central makes the submission late.
 
 ## What the check verifies
 
@@ -43,7 +45,7 @@ Submissions open at **hour 22**, when code and results lock. Your pull request's
 - `participant.github_handle` matches your GitHub username, and `repository_url` is a **public** repository you own.
 - The file passes the starter validator: identifiers, timestamps, confidence and evidence.
 - No email address or student ID is present.
-- The pull request was opened before the lock (organizers review anything late).
+- The pull request was opened, and last changed, before the deadline.
 
 It checks **format only**. It never runs your code, and it does not score you. Scoring runs once, after the lock.
 

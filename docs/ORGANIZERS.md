@@ -5,10 +5,10 @@ Everything here is done by Bluestaq organizers with write access. Participants n
 ## Before the event
 
 1. **Event details.** Edit `site/event.json` with the date, kickoff time, room, and lock time, then merge. The site updates automatically.
-2. **Lock time.** Set the repository variable `SUBMISSION_LOCK_UTC` (ISO 8601, for example `2026-12-05T22:00:00Z`) in Settings → Secrets and variables → Actions → Variables. Optionally set `SUBMISSION_GRACE_MINUTES` (default 10).
+2. **Lock time.** The repository variable `SUBMISSION_LOCK_UTC` is `2026-11-14T22:00:00Z` (Saturday, November 14, 2026, 4:00 pm CST in Fargo), and `SUBMISSION_GRACE_MINUTES` is `0`. Change them in Settings → Secrets and variables → Actions → Variables.
 3. **Answer key.** Confirm the repository secret `ANSWER_KEY_JSON` exists. It holds the evaluation answer key and is never committed.
 4. **Dataset.** Confirm the draft release **Straight Rows dataset** has `StraightRows_Student_Package.zip` attached, and that its checksum matches `starter/DATASET_SHA256`.
-5. **Recommended protections.** Protect `main`: require pull requests and the **Tests** check, and restrict who can push.
+5. **Branch protection.** `main` requires a pull request and a passing **Tests** check, applies to administrators, and blocks force pushes and deletion. Organizers merge submission pull requests; no approving review is required.
 
 ## Kickoff (hour 0)
 
@@ -17,7 +17,7 @@ Everything here is done by Bluestaq organizers with write access. Participants n
 ## Lock (hour 22)
 
 - Participants open one pull request each. The **Submission check** validates format without running participant code.
-- Review each pull request. Merge those that pass and touch only `submissions/<handle>/submission.json`. Note any marked late.
+- Review each pull request. Merge those that pass and touch only `submissions/<handle>/submission.json`. Do not merge late submissions. The check fails any pull request opened, pushed to, or reopened after the deadline, and the scorer excludes late entries.
 - Never merge a pull request that changes anything outside the participant's own folder.
 
 ## Scoring and results

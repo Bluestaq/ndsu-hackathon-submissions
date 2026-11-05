@@ -41,7 +41,7 @@ class ScoreAllTests(unittest.TestCase):
                 (Path(tmp) / handle / "submission.json").write_text(json.dumps(sub))
             prs = [{"number": 7, "author": {"login": "alice"}, "createdAt": "2026-12-01T22:05:00Z", "url": "u",
                     "files": [{"path": "submissions/alice/submission.json"}]}]
-            out = score_all.score_all(tmp, KEY, prs, "2026-12-01T22:00:00Z", 10)
+            out = score_all.score_all(tmp, KEY, prs, "2026-12-01T22:10:00Z", 0)
         by = {e["github_handle"]: e for e in out["entries"]}
         self.assertEqual(by["alice"]["rank"], 1)
         # Macro-F1 averages all five classes, so a one-class key caps the diagnostic at 25/5 + 15 = 20.
@@ -55,14 +55,17 @@ class ScoreAllTests(unittest.TestCase):
         self.assertTrue(all("episodes" not in e for e in out["entries"]))
         self.assertNotIn(KEY["episodes"][0]["start"], json.dumps(out))
 
-    def test_late_flag_after_grace(self):
-        prs = [{"number": 1, "author": {"login": "alice"}, "createdAt": "2026-12-01T22:30:00Z",
+    def test_late_submission_is_not_scored(self):
+        prs = [{"number": 1, "author": {"login": "alice"}, "createdAt": "2026-12-01T22:00:01Z",
                 "files": [{"path": "submissions/alice/submission.json"}]}]
         with tempfile.TemporaryDirectory() as tmp:
             (Path(tmp) / "alice").mkdir()
             (Path(tmp) / "alice" / "submission.json").write_text(json.dumps(submission("alice")))
-            out = score_all.score_all(tmp, KEY, prs, "2026-12-01T22:00:00Z", 10)
-        self.assertTrue(out["entries"][0]["late"])
+            out = score_all.score_all(tmp, KEY, prs, "2026-12-01T22:00:00Z", 0)
+        entry = out["entries"][0]
+        self.assertTrue(entry["late"])
+        self.assertFalse(entry["valid"])
+        self.assertNotIn("rank", entry)
 
 
 class CheckerTests(unittest.TestCase):
@@ -98,10 +101,21 @@ class CheckerTests(unittest.TestCase):
         files = [{"filename": "submissions/alice/submission.json", "status": "added"}]
         errors, _, _ = checker.check(self.env(), self.fake(files, submission("alice"), repo_public=False), validator)
         self.assertTrue(any("not public" in e for e in errors))
-        late = self.env(CREATED_AT="2026-12-01T23:00:00Z", SUBMISSION_LOCK_UTC="2026-12-01T22:00:00Z")
-        errors, warnings, _ = checker.check(late, self.fake(files, submission("alice")), validator)
-        self.assertEqual(errors, [])
-        self.assertTrue(any("after the lock" in w for w in warnings))
+        lock = {"SUBMISSION_LOCK_UTC": "2026-12-01T22:00:00Z", "SUBMISSION_GRACE_MINUTES": "0"}
+        late = self.env(CREATED_AT="2026-12-01T22:00:01Z", **lock)
+        errors, _, _ = checker.check(late, self.fake(files, submission("alice")), validator)
+        self.assertTrue(any("after the deadline" in e for e in errors))
+        on_time = self.env(CREATED_AT="2026-12-01T21:59:59Z", NOW="2026-12-01T21:59:59Z", EVENT_ACTION="opened", **lock)
+        self.assertEqual(checker.check(on_time, self.fake(files, submission("alice")), validator)[0], [])
+
+    def test_push_after_deadline_is_late(self):
+        files = [{"filename": "submissions/alice/submission.json", "status": "modified"}]
+        lock = {"SUBMISSION_LOCK_UTC": "2026-12-01T22:00:00Z", "SUBMISSION_GRACE_MINUTES": "0"}
+        pushed_late = self.env(CREATED_AT="2026-12-01T21:00:00Z", NOW="2026-12-01T22:05:00Z", EVENT_ACTION="synchronize", **lock)
+        errors, _, _ = checker.check(pushed_late, self.fake(files, submission("alice")), validator)
+        self.assertTrue(any("changed after the deadline" in e for e in errors))
+        title_edit = self.env(CREATED_AT="2026-12-01T21:00:00Z", NOW="2026-12-01T22:05:00Z", EVENT_ACTION="edited", **lock)
+        self.assertEqual(checker.check(title_edit, self.fake(files, submission("alice")), validator)[0], [])
 
     def test_email_in_submission_rejected(self):
         files = [{"filename": "submissions/alice/submission.json", "status": "added"}]

@@ -5,8 +5,7 @@ on:
   push:
     branches: [main]
     paths-ignore: ["submissions/**", "results/**", "site/**"]
-  pull_request:
-    paths-ignore: ["submissions/**", "results/**", "site/**"]
+  pull_request:  # runs on every PR so "test" can be a required check on main
 
 permissions:
   contents: read

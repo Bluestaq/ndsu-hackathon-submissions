@@ -46,7 +46,7 @@ def pr_index(prs):
     return index
 
 
-def score_all(submissions_dir, key, prs=None, lock_utc=None, grace_minutes=10):
+def score_all(submissions_dir, key, prs=None, lock_utc=None, grace_minutes=0):
     index = pr_index(prs)
     lock = parse_time(lock_utc) + timedelta(minutes=grace_minutes) if lock_utc else None
     entries = []
@@ -70,6 +70,8 @@ def score_all(submissions_dir, key, prs=None, lock_utc=None, grace_minutes=10):
         if pr:
             entry.update(pull_request=pr.get("number"), pull_request_url=pr.get("url"), submitted_at=pr["createdAt"])
             entry["late"] = bool(lock and parse_time(pr["createdAt"]) > lock)
+            if entry["late"]:
+                problems.append(f"submitted after the deadline ({lock_utc})")
         if problems:
             entries.append({**entry, "valid": False, "problems": problems})
             continue
@@ -101,7 +103,7 @@ def main():
     parser.add_argument("--key", required=True)
     parser.add_argument("--prs")
     parser.add_argument("--lock-utc")
-    parser.add_argument("--grace-minutes", type=int, default=10)
+    parser.add_argument("--grace-minutes", type=int, default=0)
     parser.add_argument("--output", default="results/results.json")
     args = parser.parse_args()
     key = json.loads(Path(args.key).read_text())

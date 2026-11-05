@@ -40,6 +40,7 @@ jobs:
           HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
           CREATED_AT: ${{ github.event.pull_request.created_at }}
+          EVENT_ACTION: ${{ github.event.action }}
           SUBMISSION_LOCK_UTC: ${{ vars.SUBMISSION_LOCK_UTC }}
           SUBMISSION_GRACE_MINUTES: ${{ vars.SUBMISSION_GRACE_MINUTES }}
         run: python .github/scripts/check_submission_pr.py

@@ -8,10 +8,12 @@ validator plus pull-request rules:
   * exactly one changed file: submissions/<pr-author>/submission.json
   * participant.github_handle and the repository owner match the PR author
   * the solution repository is public
-  * opened before the lock time (if the SUBMISSION_LOCK_UTC variable is set)
+  * opened, and last updated, before the deadline (SUBMISSION_LOCK_UTC, if set).
+    A push or reopen after the deadline makes the submission late.
 
 Environment: GH_TOKEN, REPO, PR_NUMBER, AUTHOR, HEAD_REPO, HEAD_SHA, CREATED_AT,
-SUBMISSION_LOCK_UTC (optional, ISO 8601), SUBMISSION_GRACE_MINUTES (optional).
+EVENT_ACTION, SUBMISSION_LOCK_UTC (optional, ISO 8601), SUBMISSION_GRACE_MINUTES
+(optional, default 0).
 """
 import base64
 import importlib.util
@@ -20,7 +22,7 @@ import os
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -93,20 +95,23 @@ def check(env, fetch, validator):
                 lines.append(f"Solution repository is public: {url}")
     lock = env.get("SUBMISSION_LOCK_UTC", "").strip()
     if lock:
-        grace = timedelta(minutes=int(env.get("SUBMISSION_GRACE_MINUTES") or 10))
+        deadline = parse_time(lock) + timedelta(minutes=int(env.get("SUBMISSION_GRACE_MINUTES") or 0))
         opened = parse_time(env["CREATED_AT"])
-        if opened > parse_time(lock) + grace:
-            warnings.append(f"Opened at {env['CREATED_AT']}, after the lock ({lock}). Organizers will review it as late.")
+        now = parse_time(env["NOW"]) if env.get("NOW") else datetime.now(timezone.utc)
+        if opened > deadline:
+            errors.append(f"Submissions closed at {lock}. This pull request was opened at {env['CREATED_AT']}, after the deadline.")
+        elif env.get("EVENT_ACTION") in ("synchronize", "reopened") and now > deadline:
+            errors.append(f"Submissions closed at {lock}. This pull request was changed after the deadline, so it is late.")
         else:
-            lines.append(f"Opened at {env['CREATED_AT']}, before the lock.")
+            lines.append(f"Opened at {env['CREATED_AT']}, before the deadline ({lock}).")
     if isinstance(submission, dict) and isinstance(submission.get("detections"), list):
         lines.append(f"{len(submission['detections'])} detection(s) found.")
     return errors, warnings, lines
 
 
 def main():
-    env = {k: os.environ.get(k, "") for k in ("REPO", "PR_NUMBER", "AUTHOR", "HEAD_REPO", "HEAD_SHA",
-                                                "CREATED_AT", "SUBMISSION_LOCK_UTC", "SUBMISSION_GRACE_MINUTES")}
+    env = {k: os.environ.get(k, "") for k in ("REPO", "PR_NUMBER", "AUTHOR", "HEAD_REPO", "HEAD_SHA", "CREATED_AT",
+                                                "EVENT_ACTION", "SUBMISSION_LOCK_UTC", "SUBMISSION_GRACE_MINUTES")}
     token = os.environ["GH_TOKEN"]
     errors, warnings, lines = check(env, lambda path, allow: api(path, token, allow), load_validator())
     summary = ["## Straight Rows submission check", ""]

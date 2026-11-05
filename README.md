@@ -32,7 +32,7 @@ Build your solution in **your own private repository** (copy `starter/` into it)
 
 1. Make your solution repository public.
 2. Fork this repository and add **one file**: `submissions/<your-github-username>/submission.json`.
-3. Open a pull request. Its opening time is your submission time.
+3. Open a pull request before **Saturday, November 14, 2026 at 4:00 pm Central Time (Fargo, ND)**. Pull requests opened or changed after the deadline are not accepted.
 
 An automatic check validates the file's format. It never runs your code. Full instructions are in [submissions/README.md](submissions/README.md) and on the event site.
 
