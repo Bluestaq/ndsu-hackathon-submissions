@@ -23,8 +23,8 @@ Everything here is done by Bluestaq organizers with write access. Participants n
 ## Scoring and results
 
 1. After all valid submissions are merged, run **Actions → Score submissions → Run workflow** and type `score`.
-2. The workflow scores every merged submission with the answer key secret and opens a **Publish diagnostic results** pull request that updates `results/results.json`.
-3. Review it, then merge. The results page updates automatically.
+2. The workflow scores every merged submission with the answer key secret and pushes a `results/run-<id>` branch with the updated `results/results.json`. (Organization policy does not let Actions open pull requests.)
+3. Open the run's job summary, choose **Open the results pull request**, review it, and merge. The results page updates automatically.
 4. The results page shows the automated diagnostic only. The winner is decided by the judges with the 100-point rubric and announced separately.
 
 ## Privacy

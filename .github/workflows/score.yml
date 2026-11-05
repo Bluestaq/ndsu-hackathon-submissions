@@ -1,4 +1,6 @@
-# Organizers only: score merged submissions after the lock and open a results PR.
+# Organizers only: score merged submissions after the lock and push a results branch.
+# (The Bluestaq organization does not allow Actions to open pull requests, so the job
+# summary links to a one-click pull request instead.)
 # Requires the ANSWER_KEY_JSON repository secret. The key is written to a temp
 # file, used, deleted, and never printed or committed.
 name: Score submissions
@@ -12,7 +14,7 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
+  pull-requests: read
 
 concurrency:
   group: scoring
@@ -46,9 +48,7 @@ jobs:
           python scoring/score_all.py --submissions submissions --key "$key" --prs "$RUNNER_TEMP/prs.json" \
             --lock-utc "$SUBMISSION_LOCK_UTC" --grace-minutes "${SUBMISSION_GRACE_MINUTES:-10}" --output results/results.json
           rm -f "$key"
-      - name: Open results pull request
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Push results branch
         run: |
           branch="results/run-${GITHUB_RUN_ID}"
           git config user.name "github-actions[bot]"
@@ -57,5 +57,11 @@ jobs:
           git add results/results.json
           git commit -m "Publish Straight Rows diagnostic results (run ${GITHUB_RUN_ID})"
           git push origin "$branch"
-          gh pr create --base main --head "$branch" --title "Publish diagnostic results" \
-            --body "Automated diagnostic results from run ${GITHUB_RUN_ID}. Review, then merge to publish the results page. The diagnostic is supporting evidence; judges choose the winner."
+          url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/compare/main...${branch}?expand=1&title=Publish%20diagnostic%20results"
+          {
+            echo "## Diagnostic results are ready"
+            echo ""
+            echo "Branch \`${branch}\` contains the updated \`results/results.json\`."
+            echo ""
+            echo "**[Open the results pull request](${url})**, review it, then merge to publish the results page."
+          } >> "$GITHUB_STEP_SUMMARY"
