@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results · Straight Rows Hackathon</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Straight Rows: a Bluestaq × NDSU hackathon on precision agriculture and Space Domain Awareness.">
+<style>
+:root{--bg:#f5f5f7;--card:#fff;--ink:#1d1d1f;--gray:#616166;--blue:#0066cc;--pale:#e8f2ff;--edge:#d2d2d7;--green:#0a5640}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:var(--blue)}a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+header{background:#fffffff2;border-bottom:1px solid var(--edge);position:sticky;top:0;z-index:5;backdrop-filter:saturate(180%) blur(12px)}
+.bar{max-width:1080px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.logos{display:flex;align-items:center;gap:14px;margin-right:auto}.logos img{display:block}.logos span{width:1px;height:28px;background:var(--edge)}
+nav a{color:var(--ink);text-decoration:none;padding:8px 10px;border-radius:9px;font-size:15px}nav a:hover{background:#ededf0}
+nav a[aria-current=page]{color:var(--blue);background:var(--pale);font-weight:600}
+main{max-width:1080px;margin:0 auto;padding:40px 24px 64px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--gray);text-transform:uppercase;margin:0 0 8px}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.05;margin:0 0 16px;letter-spacing:-.02em}
+h2{font-size:28px;line-height:1.2;margin:48px 0 14px;letter-spacing:-.01em}h3{font-size:19px;margin:0 0 6px}
+.lead{font-size:21px;color:var(--gray);max-width:760px;margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border-radius:18px;padding:22px 22px 18px;box-shadow:0 1px 2px #0000000d}
+.card p{margin:4px 0 0;color:var(--gray);font-size:15.5px}
+.big{font-size:34px;font-weight:700;color:var(--blue);line-height:1.1}
+.cta{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:12px;margin:4px 10px 4px 0}
+.cta.secondary{background:var(--pale);color:var(--blue)}
+.timeline{list-style:none;padding:0;margin:0;border-left:3px solid var(--pale)}
+.timeline li{position:relative;padding:0 0 22px 26px}.timeline li:before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--blue)}
+.timeline .when{font-weight:700;color:var(--blue);font-size:15px;text-transform:uppercase;letter-spacing:.04em}
+ol.steps{padding-left:22px}ol.steps li{margin:0 0 14px}
+pre{background:#1d1d1f;color:#f5f5f7;padding:16px 18px;border-radius:14px;overflow-x:auto;font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace}
+code{font:0.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:#e9e9ee;padding:1px 5px;border-radius:5px}pre code{background:none;padding:0}
+.note{background:var(--pale);border-radius:14px;padding:14px 18px;margin:18px 0}
+.warn{background:#fff4e5;border-radius:14px;padding:14px 18px;margin:18px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;font-size:15.5px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid #ececf0}th{background:#fafafc;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--gray)}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.frame{width:100%;aspect-ratio:16/10;border:0;border-radius:16px;background:#fff;box-shadow:0 2px 16px #0000001a}
+footer{border-top:1px solid var(--edge);color:var(--gray);font-size:14px}footer .bar{padding:24px}
+.scroll{overflow-x:auto;border-radius:16px}
+@media (max-width:720px){nav{width:100%;overflow-x:auto;white-space:nowrap}.lead{font-size:18px}.logos img:first-child{height:20px}.logos img:last-child{height:17px}main{padding:28px 18px 48px}.bar{padding:10px 18px}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logos" href="index.html" aria-label="Straight Rows home"><img src="assets/bluestaq_logo.png" alt="Bluestaq" height="26"><span></span><img src="assets/ndsu_logo.png" alt="North Dakota State University" height="22"></a>
+<nav aria-label="Main"><a href="index.html">Agenda</a><a href="opening-remarks.html">Opening remarks</a><a href="get-started.html">Get started</a><a href="submit.html">Submit</a><a href="results.html" aria-current="page">Results</a><a href="assets/Bluestaq_NDSU_Straight_Rows_Hackathon_Official.pdf">Guide (PDF)</a></nav>
+</div></header>
+<main>
+<p class="eyebrow">After the lock</p>
+<h1>Results</h1>
+<p class="lead">The automated diagnostic for each valid submission. It is supporting evidence for the judges, not the event score. The winner is chosen by the judges with the published 100-point rubric.</p>
+<div id="status" class="note">Loading results…</div>
+<div id="table"></div>
+<script>
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+fetch('results.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+  const st=document.getElementById('status');
+  if(d.status!=='scored'||!d.entries.length){st.textContent=d.note||'Results are published after submissions lock and scoring runs.';return;}
+  st.innerHTML=esc(d.note)+'<br><span style="color:var(--gray)">Scored '+esc(String(d.scored_at).replace('T',' ').replace(/(:\d\d)?\+00:00$/,''))+' UTC.</span>';
+  const rows=d.entries.map(e=>{
+    const who='<a href="https://github.com/'+esc(e.github_handle)+'">@'+esc(e.github_handle)+'</a>'+(e.display_name?'<br><span style="color:var(--gray)">'+esc(e.display_name)+'</span>':'');
+    const repo=e.repository_url&&/^https:\/\/github\.com\//.test(e.repository_url)?'<a href="'+esc(e.repository_url)+'">Repository</a>':'';
+    if(!e.valid)return '<tr><td>–</td><td>'+who+'</td><td colspan="5">Not scored: '+esc((e.problems||[]).join('; '))+'</td><td>'+repo+'</td></tr>';
+    return '<tr><td class="num">'+e.rank+'</td><td>'+who+(e.late?' <b style="color:#875500">Late</b>':'')+'</td><td class="num"><b>'+e.diagnostic_score.toFixed(2)+'</b> / '+d.maximum+'</td><td class="num">'+e.macro_f1.toFixed(3)+'</td><td class="num">'+e.mean_timing_credit.toFixed(3)+'</td><td class="num">'+e.action_agreement+' / '+e.episode_count+'</td><td class="num">'+e.false_positives+'</td><td>'+repo+'</td></tr>';}).join('');
+  document.getElementById('table').innerHTML='<div class="scroll"><table><thead><tr><th>#</th><th>Participant</th><th>Diagnostic</th><th>Macro-F1</th><th>Onset credit</th><th>Actions agreed</th><th>False alarms</th><th>Code</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
+}).catch(()=>{document.getElementById('status').textContent='Results are not available yet.';});
+</script>
+</main>
+<footer><div class="bar">Straight Rows Hackathon · Bluestaq × North Dakota State University · Questions: <a href="mailto:universityprograms@bluestaq.com">universityprograms@bluestaq.com</a> · <a href="https://github.com/Bluestaq/ndsu-hackathon-submissions">Repository</a></div></footer>
+</body>
+</html>

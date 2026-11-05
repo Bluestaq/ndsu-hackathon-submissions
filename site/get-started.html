@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get started · Straight Rows Hackathon</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Straight Rows: a Bluestaq × NDSU hackathon on precision agriculture and Space Domain Awareness.">
+<style>
+:root{--bg:#f5f5f7;--card:#fff;--ink:#1d1d1f;--gray:#616166;--blue:#0066cc;--pale:#e8f2ff;--edge:#d2d2d7;--green:#0a5640}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:var(--blue)}a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+header{background:#fffffff2;border-bottom:1px solid var(--edge);position:sticky;top:0;z-index:5;backdrop-filter:saturate(180%) blur(12px)}
+.bar{max-width:1080px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.logos{display:flex;align-items:center;gap:14px;margin-right:auto}.logos img{display:block}.logos span{width:1px;height:28px;background:var(--edge)}
+nav a{color:var(--ink);text-decoration:none;padding:8px 10px;border-radius:9px;font-size:15px}nav a:hover{background:#ededf0}
+nav a[aria-current=page]{color:var(--blue);background:var(--pale);font-weight:600}
+main{max-width:1080px;margin:0 auto;padding:40px 24px 64px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--gray);text-transform:uppercase;margin:0 0 8px}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.05;margin:0 0 16px;letter-spacing:-.02em}
+h2{font-size:28px;line-height:1.2;margin:48px 0 14px;letter-spacing:-.01em}h3{font-size:19px;margin:0 0 6px}
+.lead{font-size:21px;color:var(--gray);max-width:760px;margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border-radius:18px;padding:22px 22px 18px;box-shadow:0 1px 2px #0000000d}
+.card p{margin:4px 0 0;color:var(--gray);font-size:15.5px}
+.big{font-size:34px;font-weight:700;color:var(--blue);line-height:1.1}
+.cta{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:12px;margin:4px 10px 4px 0}
+.cta.secondary{background:var(--pale);color:var(--blue)}
+.timeline{list-style:none;padding:0;margin:0;border-left:3px solid var(--pale)}
+.timeline li{position:relative;padding:0 0 22px 26px}.timeline li:before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--blue)}
+.timeline .when{font-weight:700;color:var(--blue);font-size:15px;text-transform:uppercase;letter-spacing:.04em}
+ol.steps{padding-left:22px}ol.steps li{margin:0 0 14px}
+pre{background:#1d1d1f;color:#f5f5f7;padding:16px 18px;border-radius:14px;overflow-x:auto;font:14px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace}
+code{font:0.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:#e9e9ee;padding:1px 5px;border-radius:5px}pre code{background:none;padding:0}
+.note{background:var(--pale);border-radius:14px;padding:14px 18px;margin:18px 0}
+.warn{background:#fff4e5;border-radius:14px;padding:14px 18px;margin:18px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;font-size:15.5px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid #ececf0}th{background:#fafafc;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--gray)}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.frame{width:100%;aspect-ratio:16/10;border:0;border-radius:16px;background:#fff;box-shadow:0 2px 16px #0000001a}
+footer{border-top:1px solid var(--edge);color:var(--gray);font-size:14px}footer .bar{padding:24px}
+.scroll{overflow-x:auto;border-radius:16px}
+@media (max-width:720px){nav{width:100%;overflow-x:auto;white-space:nowrap}.lead{font-size:18px}.logos img:first-child{height:20px}.logos img:last-child{height:17px}main{padding:28px 18px 48px}.bar{padding:10px 18px}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logos" href="index.html" aria-label="Straight Rows home"><img src="assets/bluestaq_logo.png" alt="Bluestaq" height="26"><span></span><img src="assets/ndsu_logo.png" alt="North Dakota State University" height="22"></a>
+<nav aria-label="Main"><a href="index.html">Agenda</a><a href="opening-remarks.html">Opening remarks</a><a href="get-started.html" aria-current="page">Get started</a><a href="submit.html">Submit</a><a href="results.html">Results</a><a href="assets/Bluestaq_NDSU_Straight_Rows_Hackathon_Official.pdf">Guide (PDF)</a></nav>
+</div></header>
+<main>
+<p class="eyebrow">Setup · About 15 minutes</p>
+<h1>Get started</h1>
+<p class="lead">Clone the starter, download the data at kickoff, run the baseline, and build in your own private repository.</p>
+<h2>1. Before the event</h2>
+<ol class="steps">
+  <li>Create a free <a href="https://github.com/signup">GitHub account</a> if you don’t have one. Your GitHub username is how you are identified on submissions and results.</li>
+  <li>Install <a href="https://git-scm.com/downloads">Git</a> and <a href="https://www.python.org/downloads/">Python 3.11 or newer</a>.</li>
+  <li>Create a <b>private</b> repository for your solution, for example <code>straight-rows</code>. You will make it public at hour 22.</li>
+</ol>
+<h2>2. Clone the starter</h2>
+<pre><code>git clone https://github.com/Bluestaq/ndsu-hackathon-submissions.git
+cd ndsu-hackathon-submissions
+python -m venv .venv
+source .venv/bin/activate          # Windows PowerShell: .venv\Scripts\Activate.ps1
+python -m pip install -r starter/requirements.txt</code></pre>
+<p>Copy the <code>starter/</code> folder into your own private repository and work there.</p>
+<h2>3. Download the data (at kickoff)</h2>
+<pre><code>python starter/scripts/get_data.py</code></pre>
+<p>This downloads the official dataset from the <a href="https://github.com/Bluestaq/ndsu-hackathon-submissions/releases/latest">latest release</a>, verifies its checksum, and extracts it into <code>starter/data/</code>. Until kickoff it reports that the dataset has not been released yet. You can also download <code>StraightRows_Student_Package.zip</code> from the release page and run <code>python starter/scripts/get_data.py --zip PATH</code>.</p>
+<div class="grid">
+  <div class="card"><h3>Farm telemetry</h3><p>72 simulated hours × 3 tractors × 1 Hz: position, speed, cross-track error, satellites, C/N0, fix state, correction link.</p></div>
+  <div class="card"><h3>Space context</h3><p>Kp, Dst, regional S4 scintillation, constellation advisories, and delayed, imperfect interference reports.</p></div>
+  <div class="card"><h3>Labels</h3><p>12 labeled development episodes (hours 0–48). Eight unlabeled evaluation episodes (hours 48–72) are scored.</p></div>
+</div>
+<h2>4. Your first working result</h2>
+<pre><code>cd starter
+python submission/baseline.py --data data --output submission.json \
+  --github-handle YOUR_GITHUB_USERNAME \
+  --repo-url https://github.com/YOUR_GITHUB_USERNAME/YOUR_SOLUTION_REPO
+python submission/validate_submission.py submission.json</code></pre>
+<p>For the optional notebook: <code>python -m pip install jupyterlab</code>, then <code>jupyter lab notebooks/starter_notebook.ipynb</code>.</p>
+<div class="warn"><b>Submissions are public.</b> Identify yourself only by GitHub username. Never put your email address or student ID in <code>submission.json</code>; the validator rejects them.</div>
+<h2>5. Improve it</h2>
+<p>Inspect a labeled episode, ask whether the explanation and evidence are useful, then make one change you can measure. The <a href="assets/Bluestaq_NDSU_Straight_Rows_Hackathon_Official.pdf">official guide</a> lists the causes, actions, data, and the judging rubric. Any language, internet resources, and AI coding assistants are allowed; you must be able to explain and defend your work.</p>
+<p><a class="cta" href="submit.html">Next: how to submit</a></p>
+</main>
+<footer><div class="bar">Straight Rows Hackathon · Bluestaq × North Dakota State University · Questions: <a href="mailto:universityprograms@bluestaq.com">universityprograms@bluestaq.com</a> · <a href="https://github.com/Bluestaq/ndsu-hackathon-submissions">Repository</a></div></footer>
+</body>
+</html>

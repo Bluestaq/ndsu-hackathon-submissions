@@ -1,0 +1,4 @@
+# Python 3.11+; install JupyterLab separately for the optional notebook.
+numpy==2.3.3
+pandas==2.3.3
+matplotlib==3.10.6

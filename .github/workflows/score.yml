@@ -1,0 +1,61 @@
+# Organizers only: score merged submissions after the lock and open a results PR.
+# Requires the ANSWER_KEY_JSON repository secret. The key is written to a temp
+# file, used, deleted, and never printed or committed.
+name: Score submissions
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "score" to confirm that all valid submission PRs are merged'
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: scoring
+  cancel-in-progress: false
+
+jobs:
+  score:
+    if: ${{ inputs.confirm == 'score' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect submission pull requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr list --repo "$GITHUB_REPOSITORY" --state all --limit 1000 --json number,author,createdAt,mergedAt,state,files,url > "$RUNNER_TEMP/prs.json"
+      - name: Score
+        env:
+          ANSWER_KEY_JSON: ${{ secrets.ANSWER_KEY_JSON }}
+          SUBMISSION_LOCK_UTC: ${{ vars.SUBMISSION_LOCK_UTC }}
+          SUBMISSION_GRACE_MINUTES: ${{ vars.SUBMISSION_GRACE_MINUTES }}
+        run: |
+          test -n "$ANSWER_KEY_JSON" || { echo "::error::ANSWER_KEY_JSON secret is not set"; exit 1; }
+          key="$RUNNER_TEMP/key.json"
+          printf '%s' "$ANSWER_KEY_JSON" > "$key"
+          python scoring/score_all.py --submissions submissions --key "$key" --prs "$RUNNER_TEMP/prs.json" \
+            --lock-utc "$SUBMISSION_LOCK_UTC" --grace-minutes "${SUBMISSION_GRACE_MINUTES:-10}" --output results/results.json
+          rm -f "$key"
+      - name: Open results pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="results/run-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add results/results.json
+          git commit -m "Publish Straight Rows diagnostic results (run ${GITHUB_RUN_ID})"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" --title "Publish diagnostic results" \
+            --body "Automated diagnostic results from run ${GITHUB_RUN_ID}. Review, then merge to publish the results page. The diagnostic is supporting evidence; judges choose the winner."
