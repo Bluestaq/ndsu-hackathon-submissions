@@ -3,10 +3,12 @@
 # the base branch and reads submission.json as data through the GitHub API.
 name: Submission check
 
+# No paths filter: a submission in the wrong place must still get a failing check.
+# No "edited" trigger: editing the title or ticking the checklist must not re-run the
+# check, or a late push could be followed by a passing re-check of the same content.
 on:
   pull_request:
-    types: [opened, synchronize, reopened, edited]
-    paths: ["submissions/*/**"]
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: read
@@ -40,6 +42,7 @@ jobs:
           HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
           CREATED_AT: ${{ github.event.pull_request.created_at }}
+          CHANGED_AT: ${{ github.event.pull_request.updated_at }}
           EVENT_ACTION: ${{ github.event.action }}
           SUBMISSION_LOCK_UTC: ${{ vars.SUBMISSION_LOCK_UTC }}
           SUBMISSION_GRACE_MINUTES: ${{ vars.SUBMISSION_GRACE_MINUTES }}
