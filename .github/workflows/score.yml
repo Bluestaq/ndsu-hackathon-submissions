@@ -15,6 +15,7 @@ on:
 permissions:
   contents: write
   pull-requests: read
+  actions: read  # dates each merged PR's final commit from its Actions runs
 
 concurrency:
   group: scoring
@@ -35,9 +36,10 @@ jobs:
       - name: Collect submission pull requests
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh pr list --repo "$GITHUB_REPOSITORY" --state all --limit 1000 --json number,author,createdAt,mergedAt,state,files,url > "$RUNNER_TEMP/prs.json"
+        run: gh pr list --repo "$GITHUB_REPOSITORY" --state all --limit 1000 --json number,author,createdAt,mergedAt,state,files,url,headRefOid > "$RUNNER_TEMP/prs.json"
       - name: Score
         env:
+          GH_TOKEN: ${{ github.token }}
           ANSWER_KEY_JSON: ${{ secrets.ANSWER_KEY_JSON }}
           SUBMISSION_LOCK_UTC: ${{ vars.SUBMISSION_LOCK_UTC }}
           SUBMISSION_GRACE_MINUTES: ${{ vars.SUBMISSION_GRACE_MINUTES }}
@@ -46,7 +48,8 @@ jobs:
           key="$RUNNER_TEMP/key.json"
           printf '%s' "$ANSWER_KEY_JSON" > "$key"
           python scoring/score_all.py --submissions submissions --key "$key" --prs "$RUNNER_TEMP/prs.json" \
-            --lock-utc "$SUBMISSION_LOCK_UTC" --grace-minutes "${SUBMISSION_GRACE_MINUTES:-0}" --output results/results.json
+            --lock-utc "$SUBMISSION_LOCK_UTC" --grace-minutes "${SUBMISSION_GRACE_MINUTES:-0}" \
+            --repo "$GITHUB_REPOSITORY" --output results/results.json
           rm -f "$key"
       - name: Push results branch
         run: |

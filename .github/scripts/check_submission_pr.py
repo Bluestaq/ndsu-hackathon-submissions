@@ -8,17 +8,20 @@ validator plus pull-request rules:
   * exactly one changed file: submissions/<pr-author>/submission.json
   * participant.github_handle and the repository owner match the PR author
   * the solution repository is public
+  * no email address, and no participant fields beyond github_handle and display_name
   * opened, and last updated, before the deadline (SUBMISSION_LOCK_UTC, if set).
-    A push or reopen after the deadline makes the submission late.
+    A push or reopen after the deadline makes the submission late. Lateness uses
+    the event's own timestamps, not the time the job happens to run.
 
 Environment: GH_TOKEN, REPO, PR_NUMBER, AUTHOR, HEAD_REPO, HEAD_SHA, CREATED_AT,
-EVENT_ACTION, SUBMISSION_LOCK_UTC (optional, ISO 8601), SUBMISSION_GRACE_MINUTES
-(optional, default 0).
+CHANGED_AT (pull_request.updated_at), EVENT_ACTION, SUBMISSION_LOCK_UTC (optional,
+ISO 8601), SUBMISSION_GRACE_MINUTES (optional, default 0).
 """
 import base64
 import importlib.util
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -28,6 +31,30 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 MAX_BYTES = 1_000_000
 API = "https://api.github.com"
+PARTICIPANT_FIELDS = {"github_handle", "display_name"}
+EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}")
+# A standalone 7-9 digit number (not part of a decimal, time, or date) may be a student ID.
+ID_LIKE = re.compile(r"(?<![\d.:-])\d{7,9}(?![\d.:-])")
+
+
+def privacy_findings(raw_text, submission):
+    """Return (errors, warnings). Messages never repeat the personal detail itself."""
+    errors, warnings = [], []
+    if EMAIL.search(raw_text):
+        errors.append("Remove the email address from submission.json. Submissions are public.")
+    participant = submission.get("participant") if isinstance(submission, dict) else None
+    if isinstance(participant, dict):
+        extra = sorted(str(k) for k in participant if k not in PARTICIPANT_FIELDS)
+        if extra:
+            errors.append("participant may contain only github_handle and display_name. Remove: "
+                          + ", ".join(f"`{k}`" for k in extra))
+        name = participant.get("display_name")
+        if isinstance(name, str) and re.search(r"\d{5,}", name):
+            errors.append("display_name must not contain an ID number.")
+    if ID_LIKE.search(raw_text) and not any("ID number" in e for e in errors):
+        warnings.append("submission.json contains a 7-9 digit number. If it is a student ID, remove it: "
+                        "submissions are public.")
+    return errors, warnings
 
 
 def load_validator():
@@ -75,11 +102,15 @@ def check(env, fetch, validator):
         errors.append("submission.json must be a normal file under 1 MB.")
         return errors, warnings, lines
     try:
-        submission = json.loads(base64.b64decode(content["content"]))
+        raw = base64.b64decode(content["content"]).decode("utf-8")
+        submission = json.loads(raw)
     except ValueError as error:
-        errors.append(f"submission.json is not valid JSON ({error}).")
+        errors.append(f"submission.json is not valid UTF-8 JSON ({error}).")
         return errors, warnings, lines
     errors += validator.validate(submission)
+    private_errors, private_warnings = privacy_findings(raw, submission)
+    errors += private_errors
+    warnings += private_warnings
     participant = submission.get("participant") if isinstance(submission, dict) else None
     handle = participant.get("github_handle") if isinstance(participant, dict) else None
     if isinstance(handle, str) and handle.lower() != author.lower():
@@ -97,13 +128,18 @@ def check(env, fetch, validator):
     if lock:
         deadline = parse_time(lock) + timedelta(minutes=int(env.get("SUBMISSION_GRACE_MINUTES") or 0))
         opened = parse_time(env["CREATED_AT"])
-        now = parse_time(env["NOW"]) if env.get("NOW") else datetime.now(timezone.utc)
+        # updated_at in the event payload is when the push or reopen happened, so a
+        # slow runner cannot make an on-time push look late.
+        changed = parse_time(env["CHANGED_AT"]) if env.get("CHANGED_AT") else datetime.now(timezone.utc)
         if opened > deadline:
             errors.append(f"Submissions closed at {lock}. This pull request was opened at {env['CREATED_AT']}, after the deadline.")
-        elif env.get("EVENT_ACTION") in ("synchronize", "reopened") and now > deadline:
-            errors.append(f"Submissions closed at {lock}. This pull request was changed after the deadline, so it is late.")
+        elif env.get("EVENT_ACTION") in ("synchronize", "reopened") and changed > deadline:
+            errors.append(f"Submissions closed at {lock}. This pull request was changed at {env.get('CHANGED_AT')}, "
+                          "after the deadline, so it is late.")
         else:
             lines.append(f"Opened at {env['CREATED_AT']}, before the deadline ({lock}).")
+    else:
+        warnings.append("The submission deadline is not configured, so on-time submission was not checked.")
     if isinstance(submission, dict) and isinstance(submission.get("detections"), list):
         lines.append(f"{len(submission['detections'])} detection(s) found.")
     return errors, warnings, lines
@@ -111,7 +147,8 @@ def check(env, fetch, validator):
 
 def main():
     env = {k: os.environ.get(k, "") for k in ("REPO", "PR_NUMBER", "AUTHOR", "HEAD_REPO", "HEAD_SHA", "CREATED_AT",
-                                                "EVENT_ACTION", "SUBMISSION_LOCK_UTC", "SUBMISSION_GRACE_MINUTES")}
+                                                "CHANGED_AT", "EVENT_ACTION", "SUBMISSION_LOCK_UTC",
+                                                "SUBMISSION_GRACE_MINUTES")}
     token = os.environ["GH_TOKEN"]
     errors, warnings, lines = check(env, lambda path, allow: api(path, token, allow), load_validator())
     summary = ["## Straight Rows submission check", ""]

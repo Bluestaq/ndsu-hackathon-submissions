@@ -67,11 +67,56 @@ class ScoreAllTests(unittest.TestCase):
         self.assertFalse(entry["valid"])
         self.assertNotIn("rank", entry)
 
+    def score_one(self, sub, prs):
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "alice").mkdir()
+            (Path(tmp) / "alice" / "submission.json").write_text(json.dumps(sub))
+            return score_all.score_all(tmp, KEY, prs, "2026-12-01T22:00:00Z", 0)["entries"][0]
+
+    def test_merged_pull_request_is_used_not_an_earlier_closed_one(self):
+        files = [{"path": "submissions/alice/submission.json"}]
+        prs = [{"number": 1, "author": {"login": "alice"}, "createdAt": "2026-12-01T15:00:00Z", "mergedAt": None, "files": files},
+               {"number": 2, "author": {"login": "alice"}, "createdAt": "2026-12-01T22:20:00Z",
+                "mergedAt": "2026-12-01T23:00:00Z", "files": files}]
+        entry = self.score_one(submission("alice"), prs)
+        self.assertEqual(entry["pull_request"], 2)
+        self.assertTrue(entry["late"])
+        self.assertFalse(entry["valid"])
+
+    def test_final_commit_pushed_after_the_deadline_is_late(self):
+        prs = [{"number": 3, "author": {"login": "alice"}, "createdAt": "2026-12-01T21:00:00Z", "mergedAt": "2026-12-01T23:00:00Z",
+                "headRefOid": "late", "files": [{"path": "submissions/alice/submission.json"}]}]
+        runs = {"late": ["2026-12-01T22:04:00Z", "2026-12-01T22:30:00Z"]}
+        fetched = []
+
+        def fetch(path):
+            fetched.append(path)
+            sha = path.split("head_sha=")[1].split("&")[0]
+            return {"workflow_runs": [{"created_at": t} for t in runs.get(sha, [])]}
+
+        score_all.add_push_times(prs, fetch, "Bluestaq/ndsu-hackathon-submissions")
+        self.assertEqual(prs[0]["headPushedAt"], "2026-12-01T22:04:00Z")
+        self.assertIn("event=pull_request", fetched[0])
+        entry = self.score_one(submission("alice"), prs)
+        self.assertTrue(entry["late"])
+        self.assertTrue(any("changed after the deadline" in p for p in entry["problems"]))
+        prs[0]["headPushedAt"] = "2026-12-01T21:59:50Z"
+        self.assertTrue(self.score_one(submission("alice"), prs)["valid"])
+
+    def test_personal_details_block_scoring_and_are_not_published(self):
+        sub = submission("alice")
+        sub["participant"]["display_name"] = "Alice"
+        sub["detections"][0]["evidence"].append("alice@ndsu.edu")
+        entry = self.score_one(sub, [])
+        self.assertFalse(entry["valid"])
+        self.assertNotIn("display_name", entry)
+        self.assertNotIn("ndsu.edu", json.dumps(entry))
+
 
 class CheckerTests(unittest.TestCase):
     def env(self, **extra):
         return {"REPO": "Bluestaq/ndsu-hackathon-submissions", "PR_NUMBER": "3", "AUTHOR": "alice", "HEAD_REPO": "alice/fork",
-                "HEAD_SHA": "abc", "CREATED_AT": "2026-12-01T21:59:00Z", "SUBMISSION_LOCK_UTC": "", **extra}
+                "HEAD_SHA": "abc", "CREATED_AT": "2026-12-01T21:59:00Z", "SUBMISSION_LOCK_UTC": "2026-12-01T22:00:00Z", **extra}
 
     def fake(self, files, sub, repo_public=True):
         def fetch(path, allow_404):
@@ -105,17 +150,65 @@ class CheckerTests(unittest.TestCase):
         late = self.env(CREATED_AT="2026-12-01T22:00:01Z", **lock)
         errors, _, _ = checker.check(late, self.fake(files, submission("alice")), validator)
         self.assertTrue(any("after the deadline" in e for e in errors))
-        on_time = self.env(CREATED_AT="2026-12-01T21:59:59Z", NOW="2026-12-01T21:59:59Z", EVENT_ACTION="opened", **lock)
+        on_time = self.env(CREATED_AT="2026-12-01T21:59:59Z", CHANGED_AT="2026-12-01T21:59:59Z", EVENT_ACTION="opened", **lock)
         self.assertEqual(checker.check(on_time, self.fake(files, submission("alice")), validator)[0], [])
 
     def test_push_after_deadline_is_late(self):
         files = [{"filename": "submissions/alice/submission.json", "status": "modified"}]
         lock = {"SUBMISSION_LOCK_UTC": "2026-12-01T22:00:00Z", "SUBMISSION_GRACE_MINUTES": "0"}
-        pushed_late = self.env(CREATED_AT="2026-12-01T21:00:00Z", NOW="2026-12-01T22:05:00Z", EVENT_ACTION="synchronize", **lock)
+        pushed_late = self.env(CREATED_AT="2026-12-01T21:00:00Z", CHANGED_AT="2026-12-01T22:05:00Z", EVENT_ACTION="synchronize", **lock)
         errors, _, _ = checker.check(pushed_late, self.fake(files, submission("alice")), validator)
-        self.assertTrue(any("changed after the deadline" in e for e in errors))
-        title_edit = self.env(CREATED_AT="2026-12-01T21:00:00Z", NOW="2026-12-01T22:05:00Z", EVENT_ACTION="edited", **lock)
-        self.assertEqual(checker.check(title_edit, self.fake(files, submission("alice")), validator)[0], [])
+        self.assertTrue(any("changed at" in e and "after the deadline" in e for e in errors))
+        reopened = self.env(CREATED_AT="2026-12-01T21:00:00Z", CHANGED_AT="2026-12-01T22:01:00Z", EVENT_ACTION="reopened", **lock)
+        self.assertTrue(checker.check(reopened, self.fake(files, submission("alice")), validator)[0])
+
+    def test_on_time_push_is_not_late_when_the_runner_starts_after_the_deadline(self):
+        # The job runs whenever a runner is free; lateness comes from the push time in the event.
+        files = [{"filename": "submissions/alice/submission.json", "status": "modified"}]
+        lock = {"SUBMISSION_LOCK_UTC": "2026-12-01T22:00:00Z", "SUBMISSION_GRACE_MINUTES": "0"}
+        pushed = self.env(CREATED_AT="2026-12-01T21:00:00Z", CHANGED_AT="2026-12-01T21:59:50Z", EVENT_ACTION="synchronize", **lock)
+        self.assertEqual(checker.check(pushed, self.fake(files, submission("alice")), validator)[0], [])
+
+    def test_workflow_cannot_be_rerun_by_edits_and_has_no_paths_filter(self):
+        workflow = (ROOT / ".github/workflows/validate-submission.yml").read_text()
+        types = next(line for line in workflow.splitlines() if line.strip().startswith("types:"))
+        self.assertNotIn("edited", types)
+        self.assertNotIn("paths:", workflow)
+        self.assertIn("github.event.pull_request.updated_at", workflow)
+        # Fork pull requests do not receive repository variables, so the deadline needs a fallback.
+        self.assertRegex(workflow, r"vars\.SUBMISSION_LOCK_UTC \|\| '\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ'")
+
+    def test_missing_deadline_is_reported(self):
+        files = [{"filename": "submissions/alice/submission.json", "status": "added"}]
+        _, warnings, _ = checker.check(self.env(SUBMISSION_LOCK_UTC=""), self.fake(files, submission("alice")), validator)
+        self.assertTrue(any("deadline is not configured" in w for w in warnings))
+
+    def test_personal_details_anywhere_in_the_file_rejected(self):
+        files = [{"filename": "submissions/alice/submission.json", "status": "added"}]
+        cases = {
+            "email in evidence": lambda s: s["detections"][0]["evidence"].append("contact alice.smith@ndsu.edu"),
+            "top-level email": lambda s: s.update(email="alice@ndsu.edu"),
+            "unlisted participant field": lambda s: s["participant"].update(ndsu_email="x"),
+            "ID in display name": lambda s: s["participant"].update(display_name="Alice 1234567"),
+        }
+        for name, mutate in cases.items():
+            sub = submission("alice")
+            mutate(sub)
+            errors, _, _ = checker.check(self.env(), self.fake(files, sub), validator)
+            self.assertTrue(errors, name)
+            self.assertFalse(any("ndsu.edu" in e or "1234567" in e for e in errors), f"{name}: message repeats the detail")
+
+    def test_possible_student_id_warns_but_ordinary_numbers_do_not(self):
+        files = [{"filename": "submissions/alice/submission.json", "status": "added"}]
+        sub = submission("alice")
+        sub["detections"][0]["evidence"].append("ID 1234567")
+        errors, warnings, _ = checker.check(self.env(), self.fake(files, sub), validator)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(warnings), 1)
+        sub = submission("alice")
+        sub["detections"][0]["evidence"] += ["lat 46.87654321, C/N0 31.2 dB-Hz at 2026-05-06T10:22:00Z",
+                                             "epoch 1778063400", "S4 0.4123456"]
+        self.assertEqual(checker.check(self.env(), self.fake(files, sub), validator)[1], [])
 
     def test_email_in_submission_rejected(self):
         files = [{"filename": "submissions/alice/submission.json", "status": "added"}]
