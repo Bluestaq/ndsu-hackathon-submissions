@@ -5,7 +5,7 @@ Everything here is done by Bluestaq organizers with write access. Participants n
 ## Before the event
 
 1. **Event details.** Edit `site/event.json` with the date, kickoff time, room, and lock time, then merge. The site updates automatically.
-2. **Lock time.** The repository variable `SUBMISSION_LOCK_UTC` is `2026-11-14T22:00:00Z` (Saturday, November 14, 2026, 4:00 pm CST in Fargo), and `SUBMISSION_GRACE_MINUTES` is `0`. Change them in Settings → Secrets and variables → Actions → Variables.
+2. **Lock time.** The repository variable `SUBMISSION_LOCK_UTC` is `2026-11-14T22:00:00Z` (Saturday, November 14, 2026, 4:00 pm CST in Fargo), and `SUBMISSION_GRACE_MINUTES` is `0`. Change them in Settings → Secrets and variables → Actions → Variables. GitHub does not pass variables to pull requests from forks, so the Submission check uses the fallback written in `.github/workflows/validate-submission.yml`. If the deadline moves, change it there too.
 3. **Answer key.** Confirm the repository secret `ANSWER_KEY_JSON` exists. It holds the evaluation answer key and is never committed.
 4. **Dataset.** Confirm the draft release **Straight Rows dataset** has `StraightRows_Student_Package.zip` attached, and that its checksum matches `starter/DATASET_SHA256`.
 5. **Branch protection.** `main` requires a pull request and a passing **Tests** check, applies to administrators, and blocks force pushes and deletion. Organizers merge submission pull requests; no approving review is required.

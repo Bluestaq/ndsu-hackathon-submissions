@@ -116,7 +116,7 @@ class ScoreAllTests(unittest.TestCase):
 class CheckerTests(unittest.TestCase):
     def env(self, **extra):
         return {"REPO": "Bluestaq/ndsu-hackathon-submissions", "PR_NUMBER": "3", "AUTHOR": "alice", "HEAD_REPO": "alice/fork",
-                "HEAD_SHA": "abc", "CREATED_AT": "2026-12-01T21:59:00Z", "SUBMISSION_LOCK_UTC": "", **extra}
+                "HEAD_SHA": "abc", "CREATED_AT": "2026-12-01T21:59:00Z", "SUBMISSION_LOCK_UTC": "2026-12-01T22:00:00Z", **extra}
 
     def fake(self, files, sub, repo_public=True):
         def fetch(path, allow_404):
@@ -175,6 +175,13 @@ class CheckerTests(unittest.TestCase):
         self.assertNotIn("edited", types)
         self.assertNotIn("paths:", workflow)
         self.assertIn("github.event.pull_request.updated_at", workflow)
+        # Fork pull requests do not receive repository variables, so the deadline needs a fallback.
+        self.assertRegex(workflow, r"vars\.SUBMISSION_LOCK_UTC \|\| '\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ'")
+
+    def test_missing_deadline_is_reported(self):
+        files = [{"filename": "submissions/alice/submission.json", "status": "added"}]
+        _, warnings, _ = checker.check(self.env(SUBMISSION_LOCK_UTC=""), self.fake(files, submission("alice")), validator)
+        self.assertTrue(any("deadline is not configured" in w for w in warnings))
 
     def test_personal_details_anywhere_in_the_file_rejected(self):
         files = [{"filename": "submissions/alice/submission.json", "status": "added"}]

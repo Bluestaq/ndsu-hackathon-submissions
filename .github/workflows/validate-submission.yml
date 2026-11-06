@@ -44,6 +44,9 @@ jobs:
           CREATED_AT: ${{ github.event.pull_request.created_at }}
           CHANGED_AT: ${{ github.event.pull_request.updated_at }}
           EVENT_ACTION: ${{ github.event.action }}
-          SUBMISSION_LOCK_UTC: ${{ vars.SUBMISSION_LOCK_UTC }}
-          SUBMISSION_GRACE_MINUTES: ${{ vars.SUBMISSION_GRACE_MINUTES }}
+          # GitHub does not pass repository variables to pull requests from forks, and every
+          # submission comes from a fork, so the deadline is also written here. Keep it equal
+          # to the SUBMISSION_LOCK_UTC variable that the scorer uses.
+          SUBMISSION_LOCK_UTC: ${{ vars.SUBMISSION_LOCK_UTC || '2026-11-14T22:00:00Z' }}
+          SUBMISSION_GRACE_MINUTES: ${{ vars.SUBMISSION_GRACE_MINUTES || '0' }}
         run: python .github/scripts/check_submission_pr.py

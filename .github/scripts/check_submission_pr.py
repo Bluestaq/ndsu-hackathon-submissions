@@ -138,6 +138,8 @@ def check(env, fetch, validator):
                           "after the deadline, so it is late.")
         else:
             lines.append(f"Opened at {env['CREATED_AT']}, before the deadline ({lock}).")
+    else:
+        warnings.append("The submission deadline is not configured, so on-time submission was not checked.")
     if isinstance(submission, dict) and isinstance(submission.get("detections"), list):
         lines.append(f"{len(submission['detections'])} detection(s) found.")
     return errors, warnings, lines
