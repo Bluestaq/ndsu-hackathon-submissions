@@ -15,7 +15,8 @@
       "action": "CONTINUE_FALSE_ALARM",
       "confidence": 0.3,
       "evidence": [
-        "Organizer test submission: synthetic values, not a real detection."
+        "Organizer test submission: synthetic values, not a real detection.",
+        "questions: test.student@example.com"
       ]
     },
     {
