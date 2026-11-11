@@ -32,3 +32,10 @@ Everything here is done by Bluestaq organizers with write access. Participants n
 ## Privacy
 
 Submissions identify participants only by GitHub username and an optional display name. If anyone adds an email address, student ID, or other personal details, close the pull request and ask them to resubmit. Personal details stay with University Programs.
+
+## Judging
+
+Judges score on <https://bluestaq.github.io/ndsu-hackathon-submissions/judge/> with a personal link from the organizers. The page lists every merged submission, saves scores on the judge's device, and sends each ballot encrypted to the private `Bluestaq/ndsu-judging` repository, which counts it and keeps the live ranking. Nothing secret is stored in this repository: `site/judge/ballot-key.json` holds only the public half of the ballot key.
+
+- After editing `site/judge/index.html`, run `python .github/scripts/judge_csp.py` so the page's Content-Security-Policy matches its script. The tests fail if you forget.
+- Issuing links, reading the ranking, and locking judging are described in the private repository's README.

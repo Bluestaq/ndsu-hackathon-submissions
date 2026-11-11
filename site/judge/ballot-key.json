@@ -1,0 +1,5 @@
+{
+  "publicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAxXSvzABttnLbLqjQDqHnOAzDPhP/Sq48hXwdm3URQ7+jRrYU6nTRQNR6ruB8VHx+ECfK/hTu+lLGqED6pKVLYgPwwBaH/0VaH9+i6myldw6ECesSrLjTWDfVi4zwPogiiIgPXwLvBijn1XzOp62ckYltnaczOfPl2D+fRbA+XrpG9kUPa7vKfBlmTYCVuoIqPocTJtokjXOVqHMHyTNTAh2ZddsHHyJfgDJ9DrIKFi5T7061LZNZHmnhswnU4ccH3kqgfW5v4bEZAqXPDy5tCo4JyeEJ2WUHs+drqEYyiH2u/MZArtRkFHeoaXHvk476SkAAixqCa1Tg2QA5YidM9sA1qmS8T322PmWt1M9Sq1kgD12Cyt1ESGuzx859fWVv+LUH2budYbt7Bb9VR7qV+mK0E7i3o/cQTpfi1iYZaKR+VWQm1DLc3rLGA2aI9oR+hTxixeOsI2bd2LaBWj1QT7YM7RB/beAuXtFjnICHPJUHSmZ6sZXngV1/rnWjZsFdAgMBAAE=",
+  "kid": "52249cb44f786492",
+  "note": "Public half of the ballot key. The private half exists only in the BALLOT_PRIVATE_KEY secret of Bluestaq/ndsu-judging."
+}
