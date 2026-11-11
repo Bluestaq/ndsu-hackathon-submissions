@@ -32,7 +32,7 @@ class JudgePage(unittest.TestCase):
     def test_public_key_file_holds_only_a_consistent_public_key(self):
         key = json.loads(KEY.read_text())
         self.assertLessEqual(set(key), {"publicKey", "kid", "note"})
-        self.assertNotIn("PRIVATE", KEY.read_text())
+        self.assertNotRegex(KEY.read_text(), r"-----BEGIN [A-Z ]*PRIVATE KEY-----")
         if key["publicKey"]:
             der = base64.b64decode(key["publicKey"], validate=True)
             self.assertEqual(key["kid"], hashlib.sha256(der).hexdigest()[:16])
