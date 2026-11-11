@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 PAGE = ROOT / "site/judge/index.html"
-KEY = ROOT / "site/judge/key.json"
+KEY = ROOT / "site/judge/ballot-key.json"
 TOKEN = re.compile(r"\b(?:gh[opsur]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})")
 
 

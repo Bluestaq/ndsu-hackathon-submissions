@@ -1,0 +1,5 @@
+{
+  "publicKey": "",
+  "kid": "",
+  "note": "Filled in by tools/setup_judges.py --new-key in the private Bluestaq/ndsu-judging repository. Public half only."
+}
