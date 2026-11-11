@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-+IgxKQcBrYxt5xhbt1SVonoMWzcoa50UQ5/a3tnRSXc='; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; base-uri 'none'; form-action 'none'">
+<title>Judging · Straight Rows Hackathon</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#f5f5f7;--card:#fff;--ink:#1d1d1f;--gray:#616166;--blue:#0066cc;--pale:#e8f2ff;--edge:#d2d2d7;--green:#0a5640;--red:#b3261e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;padding-bottom:96px}
+a{color:var(--blue)}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+header{background:#fffffff2;border-bottom:1px solid var(--edge);position:sticky;top:0;z-index:5;backdrop-filter:saturate(180%) blur(12px)}
+.bar{max-width:1080px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.logos{display:flex;align-items:center;gap:14px;margin-right:auto}.logos img{display:block}.logos span{width:1px;height:28px;background:var(--edge)}
+main{max-width:1080px;margin:0 auto;padding:40px 24px 64px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--gray);text-transform:uppercase;margin:0 0 8px}
+h1{font-size:clamp(34px,5vw,52px);line-height:1.05;margin:0 0 14px;letter-spacing:-.02em}
+h2{font-size:26px;line-height:1.2;margin:40px 0 12px}h3{font-size:20px;margin:0}
+.lead{font-size:19px;color:var(--gray);max-width:760px;margin:0 0 24px}
+.card{background:var(--card);border-radius:18px;padding:22px;box-shadow:0 1px 2px #0000000d;margin:0 0 16px}
+.note{background:var(--pale);border-radius:14px;padding:14px 18px;margin:16px 0}
+.warn{background:#fff4e5;border-radius:14px;padding:14px 18px;margin:16px 0}
+.bad{background:#fdecea;color:var(--red);border-radius:14px;padding:14px 18px;margin:16px 0}
+.good{background:#e6f4ee;color:var(--green);border-radius:14px;padding:14px 18px;margin:16px 0}
+button{font:inherit;cursor:pointer}
+.cta{background:var(--blue);color:#fff;border:0;font-weight:600;padding:12px 20px;border-radius:12px}
+.cta:disabled{background:#9fb8d6;cursor:wait}
+.link{background:none;border:0;color:var(--blue);padding:0;text-decoration:underline}
+textarea,input{font:inherit;border:1px solid var(--edge);border-radius:10px;padding:8px 10px;background:#fff;color:var(--ink)}
+textarea{width:100%;resize:vertical}
+.cand-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.sub{color:var(--gray);font-size:15px}
+.chip{font-size:13px;font-weight:700;border-radius:999px;padding:3px 10px;background:#ededf0;color:var(--gray)}
+.chip.done{background:#e6f4ee;color:var(--green)}.chip.part{background:#fff4e5;color:#875500}
+.crit{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:14px 0}
+.crit label{display:flex;flex-direction:column;font-size:14px;font-weight:600}.crit small{display:block;color:var(--gray);font-weight:400;margin-bottom:6px}
+.crit input{width:100%;margin-top:auto;font-size:20px;font-variant-numeric:tabular-nums}
+input[aria-invalid=true]{border-color:var(--red);background:#fdecea}
+.total{font-weight:700;font-variant-numeric:tabular-nums}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #ececf0}th{background:#fafafc;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--gray)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto;border-radius:16px}
+#submitbar{position:fixed;left:0;right:0;bottom:0;background:#fffffff2;border-top:1px solid var(--edge);backdrop-filter:saturate(180%) blur(12px);z-index:6}
+#submitbar .bar{gap:14px}#progress{margin-right:auto;font-weight:600}
+#submit-msg{flex-basis:100%;margin:0}#submit-msg:empty{display:none}
+@media (max-width:720px){main{padding:28px 18px 48px}.bar{padding:10px 18px}.logos img:first-child{height:20px}.logos img:last-child{height:17px}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logos" href="../index.html" aria-label="Straight Rows home"><img src="../assets/bluestaq_logo.png" alt="Bluestaq" height="26"><span></span><img src="../assets/ndsu_logo.png" alt="North Dakota State University" height="22"></a>
+</div></header>
+<main>
+<p class="eyebrow">Judges only</p>
+<h1>Score the demonstrations</h1>
+<p class="lead">Score each competitor on the published 100-point rubric. Your scores save on this device as you type. Submit whenever you like; each new ballot replaces your previous one until the organizers lock judging.</p>
+
+<section id="signin" class="card">
+<h2 style="margin-top:0">Sign in</h2>
+<p>Open the personal link the organizers sent you. Or paste that link (or your judge code) here.</p>
+<label for="code" class="sub">Personal link or judge code</label>
+<textarea id="code" rows="3" autocomplete="off" spellcheck="false"></textarea>
+<p><button id="signin-btn" class="cta" type="button">Sign in</button></p>
+<div id="signin-msg" role="alert"></div>
+</section>
+
+<section id="board" hidden>
+<p>Signed in as <b id="judge-name"></b>. <button id="signout" class="link" type="button">Sign out</button></p>
+<div id="board-status" class="note" role="status">Loading submissions…</div>
+<details class="card"><summary><b>Rubric</b> (official guide, page 4)</summary><div id="rubric"></div></details>
+<div id="cards"></div>
+<h2>Your scores so far</h2>
+<p class="sub">Only you see this. The organizers combine all judges' ballots after judging closes.</p>
+<div id="mine"></div>
+</section>
+</main>
+
+<div id="submitbar" hidden><div class="bar">
+<span id="progress"></span>
+<button id="submit" class="cta" type="button">Submit ballot</button>
+<p id="submit-msg" role="status"></p>
+</div></div>
+
+<script>
+'use strict';
+(() => {
+  const CRITERIA = [
+    ['technical_execution', 'Technical execution', 30, 'Working detection, attribution and recommendation; sensible architecture; code quality; accuracy and episode timing.'],
+    ['mission_decisions', 'Mission relevance & decision quality', 25, 'Appropriate operator actions, calibrated confidence, evidence connecting farm observations with SDA context; ambiguity and consequences explained.'],
+    ['innovation_depth', 'Innovation & research depth', 20, 'Thoughtful methods and data fusion, useful improvements beyond the starter baseline, understanding of limitations.'],
+    ['assurance_rigor', 'Assurance & rigor', 15, 'Evaluation on development data, false-alarm and failure analysis, robustness, results reproducible from the README.'],
+    ['demo_communication', 'Demo & communication', 10, 'Clear explanation, a working demonstration, well-supported answers to questions.'],
+  ];
+  const SITE = {
+    api: 'https://api.github.com',
+    candidatesRepo: 'Bluestaq/ndsu-hackathon-submissions',
+    candidatesRef: 'main',
+    results: '../results.json',
+    key: 'key.json',
+  };
+  const ALG = 'RSA-OAEP-256+A256GCM+gzip';
+  const MARKER = '<!-- straight-rows-ballot v1 -->';
+  const HANDLE = /^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$/;
+  const REPO_URL = /^https:\/\/github\.com\/[A-Za-z0-9-]{1,39}\/[A-Za-z0-9._-]{1,100}\/?$/;
+  const NOTES_MAX = 1500;
+  const MAX_BODY = 60000;
+  // Test overrides work only when the page is served from this computer.
+  const LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+  const params = new URLSearchParams(location.search);
+  const $ = (id) => document.getElementById(id);
+
+  function el(tag, props = {}, ...children) {
+    const node = document.createElement(tag);
+    for (const [k, v] of Object.entries(props)) {
+      if (k === 'text') node.textContent = v;
+      else if (k === 'className') node.className = v;
+      else node.setAttribute(k, v);
+    }
+    for (const child of children) if (child !== null && child !== undefined) node.append(child);
+    return node;
+  }
+  function show(target, kind, text) { target.className = kind; target.textContent = text; }
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  // ------------------------------------------------------------------ encoding and crypto
+  function bytesToB64(bytes) {
+    const view = new Uint8Array(bytes);
+    let s = '';
+    for (let i = 0; i < view.length; i += 0x8000) s += String.fromCharCode.apply(null, view.subarray(i, i + 0x8000));
+    return btoa(s);
+  }
+  function b64ToBytes(text) { return Uint8Array.from(atob(text), (c) => c.charCodeAt(0)); }
+  function b64urlToText(text) {
+    const b64 = text.replace(/-/g, '+').replace(/_/g, '/');
+    return new TextDecoder().decode(b64ToBytes(b64 + '='.repeat((4 - (b64.length % 4)) % 4)));
+  }
+  const hex = (bytes) => Array.from(new Uint8Array(bytes), (b) => b.toString(16).padStart(2, '0')).join('');
+
+  async function gzip(bytes) {
+    const stream = new Blob([bytes]).stream().pipeThrough(new CompressionStream('gzip'));
+    return new Uint8Array(await new Response(stream).arrayBuffer());
+  }
+
+  async function loadKey() {
+    const url = LOCAL && params.get('key') ? params.get('key') : SITE.key;
+    const key = await (await fetch(url, { cache: 'no-store' })).json();
+    if (!key.publicKey) throw new Error('Judging is not open yet: the ballot key has not been published. Tell an organizer.');
+    const der = b64ToBytes(key.publicKey);
+    const kid = hex(await crypto.subtle.digest('SHA-256', der)).slice(0, 16);
+    if (kid !== key.kid) throw new Error('The published ballot key is inconsistent. Tell an organizer.');
+    const publicKey = await crypto.subtle.importKey('spki', der, { name: 'RSA-OAEP', hash: 'SHA-256' }, false, ['encrypt']);
+    return { publicKey, kid };
+  }
+
+  async function encrypt(ballot, key) {
+    const aes = await crypto.subtle.generateKey({ name: 'AES-GCM', length: 256 }, true, ['encrypt']);
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const packed = await gzip(new TextEncoder().encode(JSON.stringify(ballot)));
+    const ct = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, aes, packed);
+    const ek = await crypto.subtle.encrypt({ name: 'RSA-OAEP' }, key.publicKey, await crypto.subtle.exportKey('raw', aes));
+    return { v: 1, alg: ALG, kid: key.kid, ek: bytesToB64(ek), iv: bytesToB64(iv), ct: bytesToB64(ct) };
+  }
+
+  // ------------------------------------------------------------------ sign-in
+  function parseCredential(text) {
+    let k = String(text || '').trim();
+    const at = k.indexOf('#k=');
+    if (at >= 0) k = k.slice(at + 3); else if (k.startsWith('k=')) k = k.slice(2);
+    const c = JSON.parse(b64urlToText(k));
+    const ok = c && c.v === 1 && /^[A-Za-z0-9-]+\/[A-Za-z0-9._-]+$/.test(c.r) && [c.j, c.n, c.c, c.t].every((x) => typeof x === 'string' && x);
+    if (!ok) throw new Error('bad credential');
+    return { raw: k, repo: c.r, judge: c.j, name: c.n, code: c.c, token: c.t };
+  }
+
+  let cred = null;
+  let candidates = [];
+  let draft = { scores: {} };
+  const draftKey = () => `sr-judge-draft:${cred.judge}`;
+  const lastKey = () => `sr-judge-last:${cred.judge}`;
+
+  function signIn(text, fromLink) {
+    try {
+      cred = parseCredential(text);
+    } catch (e) {
+      if (!fromLink) show($('signin-msg'), 'bad', 'That link or code was not recognized. Copy the whole link from the organizers.');
+      return false;
+    }
+    sessionStorage.setItem('sr-judge-cred', cred.raw);
+    $('code').value = '';
+    $('judge-name').textContent = cred.name;
+    $('signin').hidden = true;
+    $('board').hidden = false;
+    $('submitbar').hidden = false;
+    try { draft = JSON.parse(localStorage.getItem(draftKey())) || { scores: {} }; } catch { draft = { scores: {} }; }
+    loadBoard();
+    resumeReceipt();
+    return true;
+  }
+
+  $('signin-btn').addEventListener('click', () => signIn($('code').value, false));
+  $('signout').addEventListener('click', () => {
+    const wipe = confirm('Sign out. Also delete your saved scores and notes from this device?\n\nOK deletes them; Cancel keeps them for next time.');
+    if (wipe) { localStorage.removeItem(draftKey()); localStorage.removeItem(lastKey()); }
+    sessionStorage.removeItem('sr-judge-cred');
+    location.replace(location.pathname + location.search);
+  });
+
+  // ------------------------------------------------------------------ candidates
+  function cleanCandidates(items) {
+    const seen = new Set();
+    return (Array.isArray(items) ? items : [])
+      .filter((c) => c && typeof c.github_handle === 'string' && HANDLE.test(c.github_handle))
+      .map((c) => ({
+        handle: c.github_handle.toLowerCase(),
+        shown: c.github_handle,
+        name: typeof c.display_name === 'string' ? c.display_name.slice(0, 60) : '',
+        repo: typeof c.repository_url === 'string' && REPO_URL.test(c.repository_url) ? c.repository_url : '',
+        diagnostic: null,
+      }))
+      .filter((c) => !seen.has(c.handle) && seen.add(c.handle))
+      .sort((a, b) => a.handle.localeCompare(b.handle));
+  }
+
+  async function fetchCandidates() {
+    if (LOCAL && params.get('candidates')) return cleanCandidates(await (await fetch(params.get('candidates'), { cache: 'no-store' })).json());
+    const listing = await fetch(`${SITE.api}/repos/${SITE.candidatesRepo}/contents/submissions?ref=${SITE.candidatesRef}`,
+      { cache: 'no-store', headers: { Accept: 'application/vnd.github+json' } });
+    if (!listing.ok) throw new Error(`GitHub returned ${listing.status} while listing submissions`);
+    const dirs = (await listing.json()).filter((x) => x.type === 'dir' && HANDLE.test(x.name));
+    const entries = await Promise.all(dirs.map(async (d) => {
+      try {
+        const r = await fetch(`https://raw.githubusercontent.com/${SITE.candidatesRepo}/${SITE.candidatesRef}/submissions/${encodeURIComponent(d.name)}/submission.json`, { cache: 'no-store' });
+        const s = await r.json();
+        return { github_handle: d.name, display_name: s && s.participant && s.participant.display_name, repository_url: s && s.repository_url };
+      } catch { return { github_handle: d.name }; }
+    }));
+    return cleanCandidates(entries);
+  }
+
+  async function attachDiagnostic(list) {
+    try {
+      const results = await (await fetch(SITE.results, { cache: 'no-store' })).json();
+      if (results.status !== 'scored') return;
+      const byHandle = new Map((results.entries || []).filter((e) => e.valid).map((e) => [String(e.github_handle).toLowerCase(), e]));
+      for (const c of list) {
+        const e = byHandle.get(c.handle);
+        if (e && typeof e.diagnostic_score === 'number') c.diagnostic = `${e.diagnostic_score.toFixed(2)} / ${results.maximum || 40}`;
+      }
+    } catch { /* results are optional */ }
+  }
+
+  async function loadBoard() {
+    const status = $('board-status');
+    try {
+      candidates = await fetchCandidates();
+      await attachDiagnostic(candidates);
+    } catch (e) {
+      show(status, 'bad', `Could not load the submissions (${e.message}). Reload the page; if it keeps failing, tell an organizer.`);
+      return;
+    }
+    if (!candidates.length) { show(status, 'warn', 'No submissions have been merged yet. Reload after the organizers merge them.'); return; }
+    show(status, 'note', `${candidates.length} submission${candidates.length === 1 ? '' : 's'} to score. Missing someone? Reload after the organizers merge their pull request.`);
+    renderRubric();
+    renderCards();
+    refresh();
+  }
+
+  // ------------------------------------------------------------------ scoring board
+  function renderRubric() {
+    const rows = CRITERIA.map(([, label, max, help]) => el('tr', {}, el('td', { text: label }), el('td', { className: 'num', text: String(max) }), el('td', { text: help })));
+    $('rubric').replaceChildren(el('div', { className: 'scroll' }, el('table', {},
+      el('thead', {}, el('tr', {}, el('th', { text: 'Criterion' }), el('th', { className: 'num', text: 'Points' }), el('th', { text: 'What to assess' }))),
+      el('tbody', {}, ...rows))),
+      el('p', { className: 'sub', text: 'Ties are broken by mission relevance and decision quality, then technical execution. The automated diagnostic is supporting evidence, not extra points.' }));
+  }
+
+  function entryFor(handle) { return (draft.scores[handle] = draft.scores[handle] || {}); }
+
+  function valueState(raw, max) {
+    if (raw === '' || raw === undefined || raw === null) return { empty: true };
+    const n = Number(raw);
+    return Number.isInteger(n) && n >= 0 && n <= max ? { value: n } : { invalid: true };
+  }
+
+  function candidateState(handle) {
+    const entry = draft.scores[handle] || {};
+    let filled = 0, invalid = 0, total = 0;
+    for (const [key, , max] of CRITERIA) {
+      const s = valueState(entry[key], max);
+      if (s.invalid) invalid++;
+      else if (!s.empty) { filled++; total += s.value; }
+    }
+    return { complete: filled === CRITERIA.length && !invalid, started: filled + invalid > 0 || Boolean(entry.notes), invalid, total };
+  }
+
+  function save() { localStorage.setItem(draftKey(), JSON.stringify(draft)); }
+
+  function renderCards() {
+    const cards = candidates.map((c) => {
+      const entry = entryFor(c.handle);
+      const chip = el('span', { className: 'chip', 'data-chip': c.handle });
+      const total = el('span', { className: 'total', 'data-total': c.handle });
+      const inputs = CRITERIA.map(([key, label, max]) => {
+        const input = el('input', { type: 'number', inputmode: 'numeric', min: '0', max: String(max), step: '1', 'data-handle': c.handle, 'data-key': key, 'aria-label': `${label} for ${c.shown}, 0 to ${max}` });
+        input.value = entry[key] === undefined ? '' : entry[key];
+        input.addEventListener('input', () => { entryFor(c.handle)[key] = input.value.trim(); save(); refresh(); });
+        return el('label', {}, label, el('small', { text: `0–${max} points` }), input);
+      });
+      const notes = el('textarea', { rows: '2', maxlength: String(NOTES_MAX), placeholder: 'Notes for the organizers (optional)', 'aria-label': `Notes for ${c.shown}` });
+      notes.value = entry.notes || '';
+      notes.addEventListener('input', () => { entryFor(c.handle).notes = notes.value; save(); refresh(); });
+      const links = [];
+      if (c.repo) links.push(el('a', { href: c.repo, target: '_blank', rel: 'noopener noreferrer', text: 'Solution repository' }));
+      if (c.diagnostic) links.push(document.createTextNode(`${links.length ? ' · ' : ''}Automated diagnostic ${c.diagnostic}`));
+      return el('article', { className: 'card', id: `cand-${c.handle}` },
+        el('div', { className: 'cand-head' },
+          el('div', {}, el('h3', { text: `@${c.shown}` }), c.name ? el('div', { className: 'sub', text: c.name }) : null),
+          el('div', {}, total, ' ', chip)),
+        links.length ? el('div', { className: 'sub' }, ...links) : null,
+        el('div', { className: 'crit' }, ...inputs),
+        notes);
+    });
+    $('cards').replaceChildren(...cards);
+  }
+
+  function refresh() {
+    let done = 0, partial = 0;
+    for (const c of candidates) {
+      const s = candidateState(c.handle);
+      const chip = document.querySelector(`[data-chip="${c.handle}"]`);
+      const total = document.querySelector(`[data-total="${c.handle}"]`);
+      if (s.complete) { done++; chip.className = 'chip done'; chip.textContent = 'Scored'; }
+      else if (s.started) { partial++; chip.className = 'chip part'; chip.textContent = s.invalid ? 'Check scores' : 'Incomplete'; }
+      else { chip.className = 'chip'; chip.textContent = 'Not scored'; }
+      total.textContent = s.complete ? `${s.total} / 100` : '';
+      for (const [key, , max] of CRITERIA) {
+        const input = document.querySelector(`input[data-handle="${c.handle}"][data-key="${key}"]`);
+        input.setAttribute('aria-invalid', valueState(input.value.trim(), max).invalid ? 'true' : 'false');
+      }
+    }
+    $('progress').textContent = `${done} of ${candidates.length} scored${partial ? ` · ${partial} incomplete` : ''}`;
+    renderMine();
+  }
+
+  function renderMine() {
+    const rows = candidates.filter((c) => candidateState(c.handle).complete)
+      .map((c) => ({ c, entry: draft.scores[c.handle], total: candidateState(c.handle).total }))
+      .sort((a, b) => b.total - a.total || Number(b.entry.mission_decisions) - Number(a.entry.mission_decisions)
+        || Number(b.entry.technical_execution) - Number(a.entry.technical_execution) || a.c.handle.localeCompare(b.c.handle));
+    if (!rows.length) { $('mine').replaceChildren(el('p', { className: 'sub', text: 'No candidates fully scored yet.' })); return; }
+    $('mine').replaceChildren(el('div', { className: 'scroll' }, el('table', {},
+      el('thead', {}, el('tr', {}, el('th', { text: 'Candidate' }), ...CRITERIA.map(([, label, max]) => el('th', { className: 'num', text: `${label.split(' ')[0]} /${max}` })), el('th', { className: 'num', text: 'Total' }))),
+      el('tbody', {}, ...rows.map(({ c, entry, total }) => el('tr', {}, el('td', { text: `@${c.shown}` }),
+        ...CRITERIA.map(([key]) => el('td', { className: 'num', text: String(entry[key]) })), el('td', { className: 'num', text: String(total) })))))));
+  }
+
+  // ------------------------------------------------------------------ submit and receipt
+  async function api(method, path, body) {
+    const response = await fetch(`${SITE.api}${path}`, {
+      method, cache: 'no-store',
+      headers: { Authorization: `Bearer ${cred.token}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28',
+        ...(body ? { 'Content-Type': 'application/json' } : {}) },
+      body: body ? JSON.stringify(body) : undefined,
+    });
+    if (!response.ok) {
+      const hint = response.status === 401 ? 'your link has expired or was revoked' : `GitHub returned ${response.status}`;
+      throw new Error(hint);
+    }
+    return response.status === 204 ? null : response.json();
+  }
+
+  function receiptText(body) {
+    return String(body).replace(/<!--[\s\S]*?-->/g, '').replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  async function waitForReceipt(last) {
+    const msg = $('submit-msg');
+    const deadline = Date.now() + 180000;
+    while (Date.now() < deadline) {
+      await sleep(4000);
+      let comments;
+      try { comments = await api('GET', `/repos/${cred.repo}/issues/${last.issue}/comments?per_page=100`); } catch { continue; }
+      const receipt = comments.find((c) => c.user && c.user.type === 'Bot' && /<!-- receipt status=/.test(c.body || ''));
+      if (!receipt) continue;
+      const status = (/status=(\w+)/.exec(receipt.body) || [])[1];
+      last.status = status;
+      last.text = receiptText(receipt.body);
+      localStorage.setItem(lastKey(), JSON.stringify(last));
+      const when = new Date(last.at).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+      show(msg, status === 'accepted' ? 'good' : 'bad', `${when}: ${last.text}`);
+      $('submit').disabled = false;
+      return;
+    }
+    show(msg, 'warn', 'No receipt yet. Your scores are saved on this device. Wait a minute and reload, or submit again.');
+    $('submit').disabled = false;
+  }
+
+  function resumeReceipt() {
+    let last = null;
+    try { last = JSON.parse(localStorage.getItem(lastKey())); } catch { /* none */ }
+    if (!last) return;
+    const when = new Date(last.at).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+    if (last.status === 'waiting') { show($('submit-msg'), 'note', `Checking the ballot you submitted at ${when}…`); $('submit').disabled = true; waitForReceipt(last); }
+    else show($('submit-msg'), last.status === 'accepted' ? 'good' : 'bad', `Last ballot, ${when}: ${last.text}`);
+  }
+
+  $('submit').addEventListener('click', async () => {
+    const msg = $('submit-msg');
+    const scores = {}, unfinished = [];
+    for (const c of candidates) {
+      const s = candidateState(c.handle);
+      if (s.complete) {
+        const entry = draft.scores[c.handle];
+        scores[c.handle] = Object.fromEntries(CRITERIA.map(([key]) => [key, Number(entry[key])]));
+        scores[c.handle].notes = String(entry.notes || '').slice(0, NOTES_MAX);
+      } else if (s.started) unfinished.push(`@${c.shown}`);
+    }
+    if (unfinished.length) { show(msg, 'bad', `Finish or clear the scores for ${unfinished.join(', ')} before submitting.`); return; }
+    if (!Object.keys(scores).length) { show(msg, 'bad', 'Score at least one candidate before submitting.'); return; }
+    $('submit').disabled = true;
+    show(msg, 'note', 'Encrypting and sending your ballot…');
+    try {
+      const nonce = hex(crypto.getRandomValues(new Uint8Array(16)));
+      const ballot = { v: 1, judge: cred.judge, code: cred.code, nonce, submitted_at: new Date().toISOString(), scores };
+      const envelope = await encrypt(ballot, await loadKey());
+      const body = `${MARKER}\nEncrypted judging ballot. Only the judging workflow can read it.\n\n\`\`\`json\n${JSON.stringify(envelope)}\n\`\`\`\n`;
+      if (body.length > MAX_BODY) throw new Error('the ballot is too large; shorten some notes');
+      const issue = await api('POST', `/repos/${cred.repo}/issues`, { title: `ballot ${nonce.slice(0, 8)}`, body });
+      const last = { issue: issue.number, at: ballot.submitted_at, count: Object.keys(scores).length, status: 'waiting' };
+      localStorage.setItem(lastKey(), JSON.stringify(last));
+      show(msg, 'note', `Sent ${last.count} candidate${last.count === 1 ? '' : 's'}. Waiting for the receipt (usually under a minute)…`);
+      await waitForReceipt(last);
+    } catch (e) {
+      show(msg, 'bad', `Not sent: ${e.message}. Your scores are still saved here.`);
+      $('submit').disabled = false;
+    }
+  });
+
+  // ------------------------------------------------------------------ start
+  function fromLink() {
+    if (!location.hash.startsWith('#k=')) return false;
+    const text = location.hash;
+    history.replaceState(null, '', location.pathname + location.search); // keep the code out of the address bar
+    if (cred) { sessionStorage.setItem('sr-judge-cred', parseCredentialSafe(text) || cred.raw); location.reload(); return true; }
+    if (!signIn(text, true)) show($('signin-msg'), 'bad', 'That personal link was not recognized. Ask an organizer for a new one.');
+    return true;
+  }
+  function parseCredentialSafe(text) { try { return parseCredential(text).raw; } catch { return null; } }
+  // A link pasted into a tab that already shows this page changes only the #fragment.
+  window.addEventListener('hashchange', fromLink);
+  if (!fromLink() && sessionStorage.getItem('sr-judge-cred')) signIn(sessionStorage.getItem('sr-judge-cred'), true);
+})();
+</script>
+</body>
+</html>
