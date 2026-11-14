@@ -1,0 +1,270 @@
+{
+  "participant": {
+    "github_handle": "shiyalisaravanan-17"
+  },
+  "repository_url": "https://github.com/shiyalisaravanan-17/project_bali_papa",
+  "detections": [
+    {
+      "start": "2026-05-06T01:03:00+00:00",
+      "end": "2026-05-06T01:55:00+00:00",
+      "class": "EQUIPMENT_FAULT",
+      "tractors": [
+        "T1"
+      ],
+      "action": "SERVICE_MACHINE_OTHERS_CONTINUE",
+      "confidence": 0.55,
+      "evidence": [
+        "T1: sustained receiver degradation from 2026-05-06T01:03:00+00:00 to 2026-05-06T01:55:00+00:00",
+        "Mean C/N0 deficit versus peers: 0.75 dB-Hz",
+        "Mean satellite-count deficit versus peers: 0.44",
+        "Correction link remained mostly healthy; machine-specific antenna or receiver issue suspected."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:12:00+00:00",
+      "end": "2026-05-06T02:54:00+00:00",
+      "class": "JAMMING",
+      "tractors": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "action": "HALT_AND_REPORT",
+      "confidence": 0.55,
+      "evidence": [
+        "T2: 2026-05-06T02:12:00+00:00 to 2026-05-06T02:29:00+00:00",
+        "Mean C/N0: 29.65 dB-Hz",
+        "Minimum satellite count: 4",
+        "Maximum cross-track error: 25.66 m",
+        "Mean S4: 0.069",
+        "Mean Kp: 2.50",
+        "Mean Dst: -95.0 nT",
+        "Peak simultaneous degraded tractors: 3",
+        "T1: 2026-05-06T02:14:00+00:00 to 2026-05-06T02:19:00+00:00",
+        "Mean C/N0: 33.21 dB-Hz",
+        "Minimum satellite count: 8",
+        "Maximum cross-track error: 4.40 m",
+        "Mean S4: 0.070",
+        "T3: 2026-05-06T02:15:00+00:00 to 2026-05-06T02:18:00+00:00",
+        "Mean C/N0: 35.25 dB-Hz",
+        "Maximum cross-track error: 0.95 m",
+        "Mean S4: 0.068",
+        "T1: 2026-05-06T02:20:00+00:00 to 2026-05-06T02:25:00+00:00",
+        "Mean C/N0: 32.83 dB-Hz",
+        "Maximum cross-track error: 3.19 m",
+        "T3: 2026-05-06T02:21:00+00:00 to 2026-05-06T02:24:00+00:00",
+        "Mean C/N0: 34.83 dB-Hz",
+        "Maximum cross-track error: 0.91 m",
+        "T1: 2026-05-06T02:26:00+00:00 to 2026-05-06T02:54:00+00:00",
+        "Mean C/N0: 32.10 dB-Hz",
+        "Maximum cross-track error: 7.04 m",
+        "Mean S4: 0.065",
+        "T3: 2026-05-06T02:26:00+00:00 to 2026-05-06T02:30:00+00:00",
+        "Mean C/N0: 34.73 dB-Hz",
+        "Maximum cross-track error: 1.56 m",
+        "T3: 2026-05-06T02:32:00+00:00 to 2026-05-06T02:36:00+00:00",
+        "Mean C/N0: 34.47 dB-Hz",
+        "Maximum cross-track error: 2.88 m",
+        "Mean S4: 0.057",
+        "T3: 2026-05-06T02:38:00+00:00 to 2026-05-06T02:42:00+00:00",
+        "Mean C/N0: 34.08 dB-Hz",
+        "Maximum cross-track error: 2.41 m",
+        "Sustained multi-tractor GNSS signal degradation: 2026-05-06T02:40:00+00:00\u20132026-05-06T02:53:00+00:00",
+        "Detection pattern: localized",
+        "Average affected-tractor C/N0: 33.06 dB-Hz",
+        "Affected tractors: T1, T3",
+        "Recent RFI report supports suspected interference; reports may be delayed or false.",
+        "T3: 2026-05-06T02:44:00+00:00 to 2026-05-06T02:48:00+00:00",
+        "Mean C/N0: 33.66 dB-Hz",
+        "Maximum cross-track error: 2.66 m",
+        "Mean S4: 0.071",
+        "T3: 2026-05-06T02:50:00+00:00 to 2026-05-06T02:54:00+00:00",
+        "Mean C/N0: 33.37 dB-Hz",
+        "Maximum cross-track error: 3.39 m",
+        "Mean S4: 0.076"
+      ]
+    },
+    {
+      "start": "2026-05-06T13:00:00+00:00",
+      "end": "2026-05-06T15:00:00+00:00",
+      "class": "SPACE_WEATHER",
+      "tractors": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "action": "HALT_OR_DEGRADED_MODE",
+      "confidence": 0.6,
+      "evidence": [
+        "T1: 2026-05-06T13:00:00+00:00 to 2026-05-06T15:00:00+00:00",
+        "Mean C/N0: 34.85 dB-Hz",
+        "Minimum satellite count: 10",
+        "Maximum cross-track error: 3.50 m",
+        "Mean S4: 0.447",
+        "Mean Kp: 6.80",
+        "Mean Dst: -35.0 nT",
+        "Peak simultaneous degraded tractors: 3",
+        "T2: 2026-05-06T13:00:00+00:00 to 2026-05-06T15:00:00+00:00",
+        "Mean C/N0: 34.86 dB-Hz",
+        "Maximum cross-track error: 3.45 m",
+        "T3: 2026-05-06T13:00:00+00:00 to 2026-05-06T15:00:00+00:00",
+        "Mean C/N0: 34.87 dB-Hz",
+        "Maximum cross-track error: 3.71 m"
+      ]
+    },
+    {
+      "start": "2026-05-06T15:00:00+00:00",
+      "end": "2026-05-06T16:00:00+00:00",
+      "class": "JAMMING",
+      "tractors": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "action": "HALT_AND_REPORT",
+      "confidence": 0.6,
+      "evidence": [
+        "T1: 2026-05-06T15:00:00+00:00 to 2026-05-06T16:00:00+00:00",
+        "Mean C/N0: 34.92 dB-Hz",
+        "Minimum satellite count: 10",
+        "Maximum cross-track error: 3.79 m",
+        "Mean S4: 0.445",
+        "Mean Kp: 3.00",
+        "Mean Dst: -20.0 nT",
+        "Peak simultaneous degraded tractors: 3",
+        "T2: 2026-05-06T15:00:00+00:00 to 2026-05-06T16:00:00+00:00",
+        "Maximum cross-track error: 4.48 m",
+        "T3: 2026-05-06T15:00:00+00:00 to 2026-05-06T16:00:00+00:00",
+        "Mean C/N0: 34.87 dB-Hz",
+        "Maximum cross-track error: 3.36 m"
+      ]
+    },
+    {
+      "start": "2026-05-06T16:34:00+00:00",
+      "end": "2026-05-06T17:12:00+00:00",
+      "class": "SPOOFING",
+      "tractors": [
+        "T1"
+      ],
+      "action": "HALT_CROSSCHECK_AND_REPORT",
+      "confidence": 0.6,
+      "evidence": [
+        "T1: 2026-05-06T16:34:00+00:00 to 2026-05-06T17:12:00+00:00",
+        "Mean C/N0: 45.00 dB-Hz",
+        "Minimum satellite count: 11",
+        "Maximum cross-track error: 8.54 m",
+        "Mean S4: 0.052",
+        "Mean Kp: 3.00",
+        "Mean Dst: -17.0 nT",
+        "Peak simultaneous degraded tractors: 0",
+        "T1: sustained guidance deviation 2026-05-06T16:34:00+00:00 to 2026-05-06T17:11:00+00:00",
+        "Mean guidance error: 4.84 m",
+        "Mean error excess relative to peers: 4.82 m",
+        "Peer-relative deviation raises a position-integrity concern; spoofing is suspected, not proven."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:30:00+00:00",
+      "end": "2026-05-06T18:57:00+00:00",
+      "class": "JAMMING",
+      "tractors": [
+        "T1",
+        "T3"
+      ],
+      "action": "HALT_AND_REPORT",
+      "confidence": 0.6,
+      "evidence": [
+        "T1: 2026-05-06T18:30:00+00:00 to 2026-05-06T18:33:00+00:00",
+        "Mean C/N0: 33.94 dB-Hz",
+        "Minimum satellite count: 8",
+        "Maximum cross-track error: 2.90 m",
+        "Mean S4: 0.085",
+        "Mean Kp: 2.30",
+        "Mean Dst: -13.0 nT",
+        "Peak simultaneous degraded tractors: 3",
+        "T3: 2026-05-06T18:30:00+00:00 to 2026-05-06T18:34:00+00:00",
+        "Mean C/N0: 30.89 dB-Hz",
+        "Minimum satellite count: 4",
+        "Maximum cross-track error: 6.23 m",
+        "T1: 2026-05-06T18:35:00+00:00 to 2026-05-06T18:39:00+00:00",
+        "Mean C/N0: 34.74 dB-Hz",
+        "Maximum cross-track error: 1.09 m",
+        "Peak simultaneous degraded tractors: 2",
+        "T3: 2026-05-06T18:35:00+00:00 to 2026-05-06T18:39:00+00:00",
+        "Mean C/N0: 30.64 dB-Hz",
+        "Maximum cross-track error: 2.79 m",
+        "T1: 2026-05-06T18:41:00+00:00 to 2026-05-06T18:45:00+00:00",
+        "Mean C/N0: 35.16 dB-Hz",
+        "Maximum cross-track error: 0.78 m",
+        "T3: 2026-05-06T18:41:00+00:00 to 2026-05-06T18:45:00+00:00",
+        "Mean C/N0: 31.32 dB-Hz",
+        "Maximum cross-track error: 3.27 m",
+        "T1: 2026-05-06T18:47:00+00:00 to 2026-05-06T18:50:00+00:00",
+        "Mean C/N0: 35.27 dB-Hz",
+        "Maximum cross-track error: 0.82 m",
+        "Mean S4: 0.047",
+        "T3: 2026-05-06T18:47:00+00:00 to 2026-05-06T18:51:00+00:00",
+        "Mean C/N0: 31.77 dB-Hz",
+        "Maximum cross-track error: 4.46 m",
+        "T3: 2026-05-06T18:53:00+00:00 to 2026-05-06T18:57:00+00:00",
+        "Mean C/N0: 32.42 dB-Hz",
+        "Maximum cross-track error: 3.35 m"
+      ]
+    },
+    {
+      "start": "2026-05-06T19:59:00+00:00",
+      "end": "2026-05-06T20:14:00+00:00",
+      "class": "EQUIPMENT_FAULT",
+      "tractors": [
+        "T2"
+      ],
+      "action": "SERVICE_MACHINE_OTHERS_CONTINUE",
+      "confidence": 0.6,
+      "evidence": [
+        "T2: 2026-05-06T19:59:00+00:00 to 2026-05-06T20:02:00+00:00",
+        "Mean C/N0: 45.06 dB-Hz",
+        "Minimum satellite count: 11",
+        "Maximum cross-track error: 0.79 m",
+        "Mean S4: 0.064",
+        "Mean Kp: 2.30",
+        "Mean Dst: -19.3 nT",
+        "Peak simultaneous degraded tractors: 1",
+        "T2: 2026-05-06T20:03:00+00:00 to 2026-05-06T20:06:00+00:00",
+        "Mean C/N0: 44.99 dB-Hz",
+        "Maximum cross-track error: 0.83 m",
+        "Mean S4: 0.070",
+        "Mean Dst: -20.0 nT",
+        "T2: 2026-05-06T20:07:00+00:00 to 2026-05-06T20:10:00+00:00",
+        "Mean C/N0: 45.01 dB-Hz",
+        "Maximum cross-track error: 0.49 m",
+        "T2: 2026-05-06T20:11:00+00:00 to 2026-05-06T20:14:00+00:00",
+        "Mean C/N0: 45.03 dB-Hz",
+        "Maximum cross-track error: 0.73 m"
+      ]
+    },
+    {
+      "start": "2026-05-06T21:54:00+00:00",
+      "end": "2026-05-06T22:24:00+00:00",
+      "class": "SPOOFING",
+      "tractors": [
+        "T3"
+      ],
+      "action": "HALT_CROSSCHECK_AND_REPORT",
+      "confidence": 0.6,
+      "evidence": [
+        "T3: 2026-05-06T21:54:00+00:00 to 2026-05-06T22:24:00+00:00",
+        "Mean C/N0: 44.98 dB-Hz",
+        "Minimum satellite count: 11",
+        "Maximum cross-track error: 5.48 m",
+        "Mean S4: 0.031",
+        "Mean Kp: 2.10",
+        "Mean Dst: -25.0 nT",
+        "Peak simultaneous degraded tractors: 0",
+        "T3: sustained guidance deviation 2026-05-06T21:54:00+00:00 to 2026-05-06T22:23:00+00:00",
+        "Mean guidance error: 3.23 m",
+        "Mean error excess relative to peers: 3.20 m",
+        "Peer-relative deviation raises a position-integrity concern; spoofing is suspected, not proven."
+      ]
+    }
+  ]
+}
