@@ -1,0 +1,3597 @@
+{
+  "participant": {
+    "github_handle": "koen-litt-bluestaq",
+    "display_name": "Koen Litt"
+  },
+  "repository_url": "https://github.com/koen-litt-bluestaq/ndsu-koen-hackathon",
+  "detections": [
+    {
+      "start": "2026-05-06T00:08:40+00:00",
+      "end": "2026-05-06T00:08:59+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T00:08:40Z lasting 19 s, xte peaked at 0.24 m while mean CN0 stayed at 44.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2021 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:08:41+00:00",
+      "end": "2026-05-06T00:09:03+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T00:08:41Z lasting 22 s, xte peaked at 0.29 m while mean CN0 stayed at 45.7 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1959 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:14:35+00:00",
+      "end": "2026-05-06T00:15:01+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T00:14:35Z lasting 26 s, xte peaked at 0.23 m while mean CN0 stayed at 45.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1956 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:14:37+00:00",
+      "end": "2026-05-06T00:14:56+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T00:14:37Z lasting 19 s, xte peaked at 0.21 m while mean CN0 stayed at 45.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1983 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:20:33+00:00",
+      "end": "2026-05-06T00:20:51+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T00:20:33Z lasting 18 s, xte peaked at 0.18 m while mean CN0 stayed at 43.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2013 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:26:26+00:00",
+      "end": "2026-05-06T00:26:51+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T00:26:26Z lasting 25 s, xte peaked at 0.26 m while mean CN0 stayed at 46.0 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2011 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:32:22+00:00",
+      "end": "2026-05-06T00:32:46+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T00:32:22Z lasting 24 s, xte peaked at 0.28 m while mean CN0 stayed at 45.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1972 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:38:18+00:00",
+      "end": "2026-05-06T00:38:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T00:38:18Z lasting 21 s, xte peaked at 0.35 m while mean CN0 stayed at 44.9 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1968 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:38:19+00:00",
+      "end": "2026-05-06T00:38:40+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T00:38:19Z lasting 21 s, xte peaked at 0.27 m while mean CN0 stayed at 45.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2038 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:38:22+00:00",
+      "end": "2026-05-06T00:38:43+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T00:38:22Z lasting 21 s, xte peaked at 0.24 m while mean CN0 stayed at 43.8 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2005 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:44:14+00:00",
+      "end": "2026-05-06T00:44:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T00:44:14Z lasting 25 s, xte peaked at 0.30 m while mean CN0 stayed at 44.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1965 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:50:08+00:00",
+      "end": "2026-05-06T00:50:26+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T00:50:08Z lasting 18 s, xte peaked at 0.27 m while mean CN0 stayed at 43.9 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1998 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:50:11+00:00",
+      "end": "2026-05-06T00:50:31+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T00:50:11Z lasting 20 s, xte peaked at 0.28 m while mean CN0 stayed at 45.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1964 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T00:56:06+00:00",
+      "end": "2026-05-06T00:56:28+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T00:56:06Z lasting 22 s, xte peaked at 0.33 m while mean CN0 stayed at 45.5 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1959 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:02:00+00:00",
+      "end": "2026-05-06T01:59:30+00:00",
+      "class": "EQUIPMENT_FAULT",
+      "tractors": [
+        "T1"
+      ],
+      "action": "SERVICE_MACHINE_OTHERS_CONTINUE",
+      "confidence": 0.75,
+      "evidence": [
+        "min_cn0 dipped to 7.0 dB-Hz on T1 at 2026-05-06T01:02:00Z while mean CN0 stayed normal - consistent with a per-antenna fault.",
+        "Other tractors in the fleet remain within the quiet-period baseline, and no SDA storm or RFI report corroborates a wide-area cause."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:02:02+00:00",
+      "end": "2026-05-06T01:02:25+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T01:02:02Z lasting 23 s, xte peaked at 0.33 m while mean CN0 stayed at 46.1 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1957 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:07:56+00:00",
+      "end": "2026-05-06T01:08:21+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T01:07:56Z lasting 25 s, xte peaked at 0.33 m while mean CN0 stayed at 44.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2022 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:08:01+00:00",
+      "end": "2026-05-06T01:08:20+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T01:08:01Z lasting 19 s, xte peaked at 0.25 m while mean CN0 stayed at 45.3 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1953 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:13:57+00:00",
+      "end": "2026-05-06T01:14:16+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T01:13:57Z lasting 19 s, xte peaked at 0.27 m while mean CN0 stayed at 45.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1984 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:19:46+00:00",
+      "end": "2026-05-06T01:20:08+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T01:19:46Z lasting 22 s, xte peaked at 0.21 m while mean CN0 stayed at 45.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1948 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:25:46+00:00",
+      "end": "2026-05-06T01:26:08+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T01:25:46Z lasting 22 s, xte peaked at 0.27 m while mean CN0 stayed at 45.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1978 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:31:37+00:00",
+      "end": "2026-05-06T01:31:58+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T01:31:37Z lasting 21 s, xte peaked at 0.46 m while mean CN0 stayed at 45.3 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1975 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:31:37+00:00",
+      "end": "2026-05-06T01:32:02+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T01:31:37Z lasting 25 s, xte peaked at 0.44 m while mean CN0 stayed at 45.1 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2036 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:37:37+00:00",
+      "end": "2026-05-06T01:37:56+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T01:37:37Z lasting 19 s, xte peaked at 0.26 m while mean CN0 stayed at 43.1 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2006 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:37:37+00:00",
+      "end": "2026-05-06T01:37:58+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T01:37:37Z lasting 21 s, xte peaked at 0.26 m while mean CN0 stayed at 45.1 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1972 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:43:32+00:00",
+      "end": "2026-05-06T01:43:54+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T01:43:32Z lasting 22 s, xte peaked at 0.21 m while mean CN0 stayed at 45.5 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1968 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:49:30+00:00",
+      "end": "2026-05-06T01:49:50+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T01:49:30Z lasting 20 s, xte peaked at 0.22 m while mean CN0 stayed at 46.2 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2027 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:55:22+00:00",
+      "end": "2026-05-06T01:55:41+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T01:55:22Z lasting 19 s, xte peaked at 0.24 m while mean CN0 stayed at 45.8 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1962 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T01:55:25+00:00",
+      "end": "2026-05-06T01:55:45+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T01:55:25Z lasting 20 s, xte peaked at 0.29 m while mean CN0 stayed at 45.6 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1997 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:07:17+00:00",
+      "end": "2026-05-06T02:07:35+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T02:07:17Z lasting 18 s, xte peaked at 0.22 m while mean CN0 stayed at 45.6 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1956 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:12:00+00:00",
+      "end": "2026-05-06T02:54:00+00:00",
+      "class": "JAMMING",
+      "tractors": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "action": "HALT_AND_REPORT",
+      "confidence": 0.9,
+      "evidence": [
+        "CN0 degradation without ionospheric cause: mean CN0 fell to 19.4 dB-Hz on T2 with min_sats=4 at 2026-05-06T02:27:30Z; quiet baseline CN0 ~45 dB-Hz, sats ~12.",
+        "Satellite count bottomed at 4 on T1 at 2026-05-06T02:33:30Z (baseline 12).",
+        "SDA RFI report RFI-003 (confidence 0.57, band L1) geolocated 1.34 km from the affected path at 2026-05-06T02:38:59Z, ~-5 min from event.",
+        "SDA ionospheric indices quiet during event (Kp=2.5, S4 peak 0.08); storm attribution ruled out.",
+        "3-tractor fleet simultaneously degraded; consistent with a single wide-area RF source, not three independent equipment faults."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:12:57+00:00",
+      "end": "2026-05-06T02:13:40+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T02:12:57Z lasting 43 s, xte peaked at 0.95 m while mean CN0 stayed at 37.1 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.1987 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:13:04+00:00",
+      "end": "2026-05-06T02:13:41+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T02:13:04Z lasting 37 s, xte peaked at 0.76 m while mean CN0 stayed at 35.6 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9067 N / -97.1953 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:13:11+00:00",
+      "end": "2026-05-06T02:13:32+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T02:13:11Z lasting 21 s, xte peaked at 0.41 m while mean CN0 stayed at 37.7 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2013 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:18:53+00:00",
+      "end": "2026-05-06T02:19:36+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T02:18:53Z lasting 43 s, xte peaked at 0.77 m while mean CN0 stayed at 36.5 dB-Hz with 9 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1951 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:18:54+00:00",
+      "end": "2026-05-06T02:19:36+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T02:18:54Z lasting 42 s, xte peaked at 0.70 m while mean CN0 stayed at 36.7 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1986 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:18:54+00:00",
+      "end": "2026-05-06T02:19:15+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T02:18:54Z lasting 21 s, xte peaked at 0.50 m while mean CN0 stayed at 37.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.2011 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:19:11+00:00",
+      "end": "2026-05-06T02:19:36+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T02:19:11Z lasting 25 s, xte peaked at 0.42 m while mean CN0 stayed at 37.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9065 N / -97.2009 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:54:43+00:00",
+      "end": "2026-05-06T02:55:01+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T02:54:43Z lasting 18 s, xte peaked at 0.28 m while mean CN0 stayed at 45.9 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1991 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T11:00:31+00:00",
+      "end": "2026-05-06T11:00:54+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T11:00:31Z lasting 23 s, xte peaked at 0.35 m while mean CN0 stayed at 44.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1989 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T11:12:23+00:00",
+      "end": "2026-05-06T11:12:48+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T11:12:23Z lasting 25 s, xte peaked at 0.24 m while mean CN0 stayed at 43.9 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1956 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T11:12:25+00:00",
+      "end": "2026-05-06T11:12:44+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T11:12:25Z lasting 19 s, xte peaked at 0.26 m while mean CN0 stayed at 44.4 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2016 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T11:18:18+00:00",
+      "end": "2026-05-06T11:18:40+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T11:18:18Z lasting 22 s, xte peaked at 0.28 m while mean CN0 stayed at 44.5 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1954 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T11:24:15+00:00",
+      "end": "2026-05-06T11:24:38+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T11:24:15Z lasting 23 s, xte peaked at 0.31 m while mean CN0 stayed at 45.3 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2011 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T11:30:10+00:00",
+      "end": "2026-05-06T11:30:33+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T11:30:10Z lasting 23 s, xte peaked at 0.31 m while mean CN0 stayed at 45.7 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1972 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T11:47:56+00:00",
+      "end": "2026-05-06T11:48:14+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T11:47:56Z lasting 18 s, xte peaked at 0.18 m while mean CN0 stayed at 45.4 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1997 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T11:48:03+00:00",
+      "end": "2026-05-06T11:48:21+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T11:48:03Z lasting 18 s, xte peaked at 0.28 m while mean CN0 stayed at 45.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1962 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T12:11:39+00:00",
+      "end": "2026-05-06T12:12:00+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T12:11:39Z lasting 21 s, xte peaked at 0.31 m while mean CN0 stayed at 45.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1986 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T12:11:40+00:00",
+      "end": "2026-05-06T12:11:59+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T12:11:40Z lasting 19 s, xte peaked at 0.25 m while mean CN0 stayed at 46.0 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1950 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T12:23:32+00:00",
+      "end": "2026-05-06T12:23:52+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T12:23:32Z lasting 20 s, xte peaked at 0.44 m while mean CN0 stayed at 45.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1978 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T12:29:24+00:00",
+      "end": "2026-05-06T12:29:49+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T12:29:24Z lasting 25 s, xte peaked at 0.37 m while mean CN0 stayed at 45.9 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2035 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T12:47:14+00:00",
+      "end": "2026-05-06T12:47:33+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T12:47:14Z lasting 19 s, xte peaked at 0.29 m while mean CN0 stayed at 44.7 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2027 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T12:53:06+00:00",
+      "end": "2026-05-06T12:53:28+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T12:53:06Z lasting 22 s, xte peaked at 0.25 m while mean CN0 stayed at 44.8 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1962 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T12:53:07+00:00",
+      "end": "2026-05-06T12:53:25+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T12:53:07Z lasting 18 s, xte peaked at 0.35 m while mean CN0 stayed at 45.5 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1997 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T12:53:12+00:00",
+      "end": "2026-05-06T12:53:32+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T12:53:12Z lasting 20 s, xte peaked at 0.27 m while mean CN0 stayed at 44.3 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2022 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T12:59:03+00:00",
+      "end": "2026-05-06T12:59:24+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T12:59:03Z lasting 21 s, xte peaked at 0.25 m while mean CN0 stayed at 45.5 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1994 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:00:00+00:00",
+      "end": "2026-05-06T16:00:00+00:00",
+      "class": "SPACE_WEATHER",
+      "tractors": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "action": "HALT_OR_DEGRADED_MODE",
+      "confidence": 0.95,
+      "evidence": [
+        "Fleet CN0 collapsed: mean CN0 fell to 34.0 dB-Hz on T3 (quiet baseline 45.0) with min_sats=10 at 2026-05-06T13:23:30Z.",
+        "SDA SGI: Kp peaked at 6.8 at 2026-05-06T12:00:00Z (storm threshold >=5.0).",
+        "SDA SGI: Dst reached -42 nT (geomagnetic storm).",
+        "Regional S4 scintillation proxy peaked at 0.46 at 2026-05-06T13:15:00Z (scintillation threshold >=0.25).",
+        "Constellation advisory ADV-2026-118 (SPACE_WEATHER) issued 2026-05-05T07:00:00Z covers the event window.",
+        "Corroboration across all 3 tractors (T1,T2,T3) within the same minute; incompatible with a single-machine fault."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:04:48+00:00",
+      "end": "2026-05-06T13:05:32+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:04:48Z lasting 44 s, xte peaked at 0.78 m while mean CN0 stayed at 35.7 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1956 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:04:48+00:00",
+      "end": "2026-05-06T13:05:32+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:04:48Z lasting 44 s, xte peaked at 3.71 m while mean CN0 stayed at 32.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.2016 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:04:57+00:00",
+      "end": "2026-05-06T13:05:32+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:04:57Z lasting 35 s, xte peaked at 1.10 m while mean CN0 stayed at 31.3 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.1991 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:10:44+00:00",
+      "end": "2026-05-06T13:11:22+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:10:44Z lasting 38 s, xte peaked at 0.85 m while mean CN0 stayed at 33.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1953 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:10:44+00:00",
+      "end": "2026-05-06T13:11:27+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:10:44Z lasting 43 s, xte peaked at 1.96 m while mean CN0 stayed at 32.5 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9067 N / -97.2013 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:10:46+00:00",
+      "end": "2026-05-06T13:11:26+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:10:46Z lasting 40 s, xte peaked at 1.02 m while mean CN0 stayed at 32.9 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1989 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:16:39+00:00",
+      "end": "2026-05-06T13:17:22+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:16:39Z lasting 43 s, xte peaked at 0.97 m while mean CN0 stayed at 32.6 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9067 N / -97.1984 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:16:39+00:00",
+      "end": "2026-05-06T13:17:23+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:16:39Z lasting 44 s, xte peaked at 2.26 m while mean CN0 stayed at 32.4 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9063 N / -97.1951 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:16:39+00:00",
+      "end": "2026-05-06T13:17:22+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:16:39Z lasting 43 s, xte peaked at 1.07 m while mean CN0 stayed at 32.7 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9065 N / -97.2011 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:22:35+00:00",
+      "end": "2026-05-06T13:23:18+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:22:35Z lasting 43 s, xte peaked at 1.94 m while mean CN0 stayed at 32.5 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9065 N / -97.1983 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:22:35+00:00",
+      "end": "2026-05-06T13:23:19+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:22:35Z lasting 44 s, xte peaked at 1.11 m while mean CN0 stayed at 32.0 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2008 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:22:36+00:00",
+      "end": "2026-05-06T13:23:19+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:22:36Z lasting 43 s, xte peaked at 0.85 m while mean CN0 stayed at 32.4 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1948 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:28:31+00:00",
+      "end": "2026-05-06T13:29:14+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:28:31Z lasting 43 s, xte peaked at 0.94 m while mean CN0 stayed at 33.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1979 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:28:33+00:00",
+      "end": "2026-05-06T13:29:13+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:28:33Z lasting 40 s, xte peaked at 1.92 m while mean CN0 stayed at 32.7 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2039 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:28:34+00:00",
+      "end": "2026-05-06T13:29:14+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:28:34Z lasting 40 s, xte peaked at 3.48 m while mean CN0 stayed at 33.0 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2003 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:34:26+00:00",
+      "end": "2026-05-06T13:35:10+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:34:26Z lasting 44 s, xte peaked at 2.38 m while mean CN0 stayed at 31.1 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9063 N / -97.2000 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:34:28+00:00",
+      "end": "2026-05-06T13:35:09+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:34:28Z lasting 41 s, xte peaked at 1.56 m while mean CN0 stayed at 32.7 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1975 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:34:28+00:00",
+      "end": "2026-05-06T13:35:10+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:34:28Z lasting 42 s, xte peaked at 1.14 m while mean CN0 stayed at 32.7 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.2035 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:40:22+00:00",
+      "end": "2026-05-06T13:41:04+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:40:22Z lasting 42 s, xte peaked at 1.24 m while mean CN0 stayed at 33.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.1972 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:40:22+00:00",
+      "end": "2026-05-06T13:41:05+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:40:22Z lasting 43 s, xte peaked at 2.99 m while mean CN0 stayed at 32.8 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1998 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:40:24+00:00",
+      "end": "2026-05-06T13:41:05+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:40:24Z lasting 41 s, xte peaked at 1.58 m while mean CN0 stayed at 32.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9063 N / -97.2032 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:46:17+00:00",
+      "end": "2026-05-06T13:47:01+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:46:17Z lasting 44 s, xte peaked at 1.84 m while mean CN0 stayed at 32.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1968 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:46:17+00:00",
+      "end": "2026-05-06T13:47:01+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:46:17Z lasting 44 s, xte peaked at 0.79 m while mean CN0 stayed at 37.1 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2028 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:46:18+00:00",
+      "end": "2026-05-06T13:46:59+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:46:18Z lasting 41 s, xte peaked at 1.97 m while mean CN0 stayed at 32.7 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1994 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:52:13+00:00",
+      "end": "2026-05-06T13:52:55+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:52:13Z lasting 42 s, xte peaked at 1.33 m while mean CN0 stayed at 32.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9067 N / -97.1965 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:52:13+00:00",
+      "end": "2026-05-06T13:52:56+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:52:13Z lasting 43 s, xte peaked at 1.06 m while mean CN0 stayed at 32.2 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1991 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:52:15+00:00",
+      "end": "2026-05-06T13:52:54+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:52:15Z lasting 39 s, xte peaked at 1.50 m while mean CN0 stayed at 32.7 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.2027 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:58:08+00:00",
+      "end": "2026-05-06T13:58:52+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T13:58:08Z lasting 44 s, xte peaked at 1.33 m while mean CN0 stayed at 32.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1962 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:58:08+00:00",
+      "end": "2026-05-06T13:58:50+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T13:58:08Z lasting 42 s, xte peaked at 1.56 m while mean CN0 stayed at 32.9 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2022 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:58:08+00:00",
+      "end": "2026-05-06T13:58:51+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T13:58:08Z lasting 43 s, xte peaked at 1.27 m while mean CN0 stayed at 32.9 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1987 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:04:04+00:00",
+      "end": "2026-05-06T14:04:45+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:04:04Z lasting 41 s, xte peaked at 2.00 m while mean CN0 stayed at 32.7 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9067 N / -97.2019 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:04:05+00:00",
+      "end": "2026-05-06T14:04:47+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:04:05Z lasting 42 s, xte peaked at 0.94 m while mean CN0 stayed at 32.6 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1984 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:04:06+00:00",
+      "end": "2026-05-06T14:04:47+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:04:06Z lasting 41 s, xte peaked at 1.86 m while mean CN0 stayed at 32.8 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.1961 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:09:59+00:00",
+      "end": "2026-05-06T14:10:43+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:09:59Z lasting 44 s, xte peaked at 2.66 m while mean CN0 stayed at 32.4 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1957 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:09:59+00:00",
+      "end": "2026-05-06T14:10:43+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:09:59Z lasting 44 s, xte peaked at 1.80 m while mean CN0 stayed at 32.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1981 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:10:05+00:00",
+      "end": "2026-05-06T14:10:43+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:10:05Z lasting 38 s, xte peaked at 0.87 m while mean CN0 stayed at 34.1 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2016 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:15:55+00:00",
+      "end": "2026-05-06T14:16:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:15:55Z lasting 44 s, xte peaked at 2.10 m while mean CN0 stayed at 32.7 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9063 N / -97.2014 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:15:55+00:00",
+      "end": "2026-05-06T14:16:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:15:55Z lasting 44 s, xte peaked at 1.34 m while mean CN0 stayed at 32.7 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1978 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:15:57+00:00",
+      "end": "2026-05-06T14:16:38+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:15:57Z lasting 41 s, xte peaked at 0.76 m while mean CN0 stayed at 34.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1953 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:21:51+00:00",
+      "end": "2026-05-06T14:22:32+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:21:51Z lasting 41 s, xte peaked at 1.56 m while mean CN0 stayed at 32.4 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9065 N / -97.2011 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:21:52+00:00",
+      "end": "2026-05-06T14:22:34+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:21:52Z lasting 42 s, xte peaked at 0.70 m while mean CN0 stayed at 35.1 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1950 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:21:52+00:00",
+      "end": "2026-05-06T14:22:33+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:21:52Z lasting 41 s, xte peaked at 0.83 m while mean CN0 stayed at 35.6 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.1976 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:27:46+00:00",
+      "end": "2026-05-06T14:28:30+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:27:46Z lasting 44 s, xte peaked at 0.73 m while mean CN0 stayed at 35.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.1946 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:27:46+00:00",
+      "end": "2026-05-06T14:28:30+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:27:46Z lasting 44 s, xte peaked at 0.72 m while mean CN0 stayed at 36.2 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1973 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:27:48+00:00",
+      "end": "2026-05-06T14:28:30+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:27:48Z lasting 42 s, xte peaked at 0.98 m while mean CN0 stayed at 34.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2008 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:33:42+00:00",
+      "end": "2026-05-06T14:34:25+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:33:42Z lasting 43 s, xte peaked at 0.63 m while mean CN0 stayed at 35.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2039 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:33:42+00:00",
+      "end": "2026-05-06T14:34:24+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:33:42Z lasting 42 s, xte peaked at 0.70 m while mean CN0 stayed at 34.4 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.1968 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:33:44+00:00",
+      "end": "2026-05-06T14:34:15+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:33:44Z lasting 31 s, xte peaked at 0.69 m while mean CN0 stayed at 35.7 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2005 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:39:37+00:00",
+      "end": "2026-05-06T14:40:21+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:39:37Z lasting 44 s, xte peaked at 2.20 m while mean CN0 stayed at 33.0 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2036 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:39:37+00:00",
+      "end": "2026-05-06T14:40:19+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:39:37Z lasting 42 s, xte peaked at 1.41 m while mean CN0 stayed at 32.8 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1967 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:39:38+00:00",
+      "end": "2026-05-06T14:40:20+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:39:38Z lasting 42 s, xte peaked at 1.01 m while mean CN0 stayed at 32.1 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9067 N / -97.2002 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:45:33+00:00",
+      "end": "2026-05-06T14:46:16+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:45:33Z lasting 43 s, xte peaked at 2.17 m while mean CN0 stayed at 32.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9063 N / -97.1998 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:45:33+00:00",
+      "end": "2026-05-06T14:46:16+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:45:33Z lasting 43 s, xte peaked at 1.83 m while mean CN0 stayed at 31.7 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.1964 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:45:34+00:00",
+      "end": "2026-05-06T14:46:16+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:45:34Z lasting 42 s, xte peaked at 0.69 m while mean CN0 stayed at 35.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.2033 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:51:28+00:00",
+      "end": "2026-05-06T14:52:11+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:51:28Z lasting 43 s, xte peaked at 0.85 m while mean CN0 stayed at 32.9 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2028 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:51:28+00:00",
+      "end": "2026-05-06T14:52:11+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:51:28Z lasting 43 s, xte peaked at 1.72 m while mean CN0 stayed at 32.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1961 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:51:34+00:00",
+      "end": "2026-05-06T14:52:12+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:51:34Z lasting 38 s, xte peaked at 0.94 m while mean CN0 stayed at 36.2 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1994 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:57:24+00:00",
+      "end": "2026-05-06T14:58:06+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T14:57:24Z lasting 42 s, xte peaked at 1.61 m while mean CN0 stayed at 32.6 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2027 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:57:24+00:00",
+      "end": "2026-05-06T14:58:07+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T14:57:24Z lasting 43 s, xte peaked at 1.89 m while mean CN0 stayed at 32.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1992 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T14:57:24+00:00",
+      "end": "2026-05-06T14:58:07+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T14:57:24Z lasting 43 s, xte peaked at 0.83 m while mean CN0 stayed at 34.6 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1956 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:03:19+00:00",
+      "end": "2026-05-06T15:04:01+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:03:19Z lasting 42 s, xte peaked at 1.99 m while mean CN0 stayed at 32.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2024 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:03:19+00:00",
+      "end": "2026-05-06T15:04:03+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:03:19Z lasting 44 s, xte peaked at 0.73 m while mean CN0 stayed at 35.3 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1954 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:03:21+00:00",
+      "end": "2026-05-06T15:04:02+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:03:21Z lasting 41 s, xte peaked at 0.94 m while mean CN0 stayed at 34.9 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1989 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:09:15+00:00",
+      "end": "2026-05-06T15:09:35+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:09:15Z lasting 20 s, xte peaked at 0.62 m while mean CN0 stayed at 37.1 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.1986 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:09:16+00:00",
+      "end": "2026-05-06T15:09:59+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:09:16Z lasting 43 s, xte peaked at 1.06 m while mean CN0 stayed at 32.9 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.2019 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:09:16+00:00",
+      "end": "2026-05-06T15:09:52+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:09:16Z lasting 36 s, xte peaked at 0.88 m while mean CN0 stayed at 32.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.1951 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:09:32+00:00",
+      "end": "2026-05-06T15:09:58+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:09:32Z lasting 26 s, xte peaked at 1.31 m while mean CN0 stayed at 32.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9063 N / -97.1984 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:15:11+00:00",
+      "end": "2026-05-06T15:15:54+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:15:11Z lasting 43 s, xte peaked at 2.05 m while mean CN0 stayed at 32.7 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1983 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:15:12+00:00",
+      "end": "2026-05-06T15:15:54+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:15:12Z lasting 42 s, xte peaked at 1.16 m while mean CN0 stayed at 32.4 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1946 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:15:13+00:00",
+      "end": "2026-05-06T15:15:54+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:15:13Z lasting 41 s, xte peaked at 1.79 m while mean CN0 stayed at 31.7 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2017 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:21:06+00:00",
+      "end": "2026-05-06T15:21:49+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:21:06Z lasting 43 s, xte peaked at 3.72 m while mean CN0 stayed at 32.0 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1978 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:21:06+00:00",
+      "end": "2026-05-06T15:21:49+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:21:06Z lasting 43 s, xte peaked at 0.64 m while mean CN0 stayed at 34.1 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.2038 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:21:08+00:00",
+      "end": "2026-05-06T15:21:50+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:21:08Z lasting 42 s, xte peaked at 0.60 m while mean CN0 stayed at 34.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9067 N / -97.2013 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:27:02+00:00",
+      "end": "2026-05-06T15:27:44+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:27:02Z lasting 42 s, xte peaked at 2.29 m while mean CN0 stayed at 32.2 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.2036 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:27:03+00:00",
+      "end": "2026-05-06T15:27:44+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:27:03Z lasting 41 s, xte peaked at 0.94 m while mean CN0 stayed at 34.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2011 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:27:06+00:00",
+      "end": "2026-05-06T15:27:45+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:27:06Z lasting 39 s, xte peaked at 0.77 m while mean CN0 stayed at 32.2 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1975 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:32:57+00:00",
+      "end": "2026-05-06T15:33:32+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:32:57Z lasting 35 s, xte peaked at 1.50 m while mean CN0 stayed at 32.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9063 N / -97.2008 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:32:57+00:00",
+      "end": "2026-05-06T15:33:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:32:57Z lasting 42 s, xte peaked at 0.81 m while mean CN0 stayed at 37.5 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.2032 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:32:58+00:00",
+      "end": "2026-05-06T15:33:37+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:32:58Z lasting 39 s, xte peaked at 0.83 m while mean CN0 stayed at 35.8 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1972 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:38:53+00:00",
+      "end": "2026-05-06T15:39:36+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:38:53Z lasting 43 s, xte peaked at 1.54 m while mean CN0 stayed at 31.8 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.2005 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:38:53+00:00",
+      "end": "2026-05-06T15:39:35+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:38:53Z lasting 42 s, xte peaked at 3.08 m while mean CN0 stayed at 32.9 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9067 N / -97.2028 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:38:54+00:00",
+      "end": "2026-05-06T15:39:36+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:38:54Z lasting 42 s, xte peaked at 0.78 m while mean CN0 stayed at 33.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1970 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:44:49+00:00",
+      "end": "2026-05-06T15:45:32+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:44:49Z lasting 43 s, xte peaked at 1.33 m while mean CN0 stayed at 32.9 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1967 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:44:49+00:00",
+      "end": "2026-05-06T15:45:22+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:44:49Z lasting 33 s, xte peaked at 0.80 m while mean CN0 stayed at 36.3 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2027 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:44:51+00:00",
+      "end": "2026-05-06T15:45:32+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:44:51Z lasting 41 s, xte peaked at 1.25 m while mean CN0 stayed at 32.1 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2002 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:50:44+00:00",
+      "end": "2026-05-06T15:51:27+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:50:44Z lasting 43 s, xte peaked at 3.79 m while mean CN0 stayed at 32.6 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1997 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:50:45+00:00",
+      "end": "2026-05-06T15:51:27+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:50:45Z lasting 42 s, xte peaked at 2.25 m while mean CN0 stayed at 31.4 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.1964 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:50:45+00:00",
+      "end": "2026-05-06T15:51:27+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:50:45Z lasting 42 s, xte peaked at 1.48 m while mean CN0 stayed at 32.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9067 N / -97.2022 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:56:39+00:00",
+      "end": "2026-05-06T15:57:23+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T15:56:39Z lasting 44 s, xte peaked at 2.65 m while mean CN0 stayed at 32.9 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.1961 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:56:40+00:00",
+      "end": "2026-05-06T15:57:20+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T15:56:40Z lasting 40 s, xte peaked at 0.77 m while mean CN0 stayed at 35.8 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1995 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T15:56:40+00:00",
+      "end": "2026-05-06T15:57:22+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T15:56:40Z lasting 42 s, xte peaked at 1.76 m while mean CN0 stayed at 31.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2019 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:08:39+00:00",
+      "end": "2026-05-06T16:09:04+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T16:08:39Z lasting 25 s, xte peaked at 0.24 m while mean CN0 stayed at 45.1 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1953 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:14:35+00:00",
+      "end": "2026-05-06T16:14:58+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T16:14:35Z lasting 23 s, xte peaked at 0.24 m while mean CN0 stayed at 44.9 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1986 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:26:28+00:00",
+      "end": "2026-05-06T16:26:49+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T16:26:28Z lasting 21 s, xte peaked at 0.31 m while mean CN0 stayed at 45.2 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2005 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:26:31+00:00",
+      "end": "2026-05-06T16:26:52+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T16:26:31Z lasting 21 s, xte peaked at 0.25 m while mean CN0 stayed at 45.4 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1978 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:32:13+00:00",
+      "end": "2026-05-06T16:32:56+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T16:32:13Z lasting 43 s, xte peaked at 0.61 m while mean CN0 stayed at 45.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1975 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:38:08+00:00",
+      "end": "2026-05-06T16:38:52+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T16:38:08Z lasting 44 s, xte peaked at 1.78 m while mean CN0 stayed at 43.6 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.1971 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:38:18+00:00",
+      "end": "2026-05-06T16:38:41+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T16:38:18Z lasting 23 s, xte peaked at 0.33 m while mean CN0 stayed at 45.1 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1998 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:40:30+00:00",
+      "end": "2026-05-06T17:12:00+00:00",
+      "class": "SPOOFING",
+      "tractors": [
+        "T1"
+      ],
+      "action": "HALT_CROSSCHECK_AND_REPORT",
+      "confidence": 0.8,
+      "evidence": [
+        "Cross-track-error rose to 8.05 m on T1 at 2026-05-06T17:10:00Z while mean CN0 stayed at 44.7 dB-Hz and sats_min=11 (link ok). Reported GNSS position is not trusted ground truth; cross-track channel disagrees with reported solution.",
+        "No RFI geolocation report overlaps this window; signal strength intact rules out jamming, and fleet-wide CN0 is nominal so ionospheric scintillation is ruled out.",
+        "Single-tractor geometry inconsistent with wide-area RF or storm cause; spoofing targets a specific receiver.",
+        "Contemporaneous SDA context: Kp=3.0, S4 peak 0.46 (storm thresholds Kp>=5, S4>=0.25)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:44:04+00:00",
+      "end": "2026-05-06T16:44:47+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T16:44:04Z lasting 43 s, xte peaked at 2.87 m while mean CN0 stayed at 45.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1968 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:44:15+00:00",
+      "end": "2026-05-06T16:44:36+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T16:44:15Z lasting 21 s, xte peaked at 0.29 m while mean CN0 stayed at 45.8 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2030 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:44:20+00:00",
+      "end": "2026-05-06T16:44:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T16:44:20Z lasting 19 s, xte peaked at 0.36 m while mean CN0 stayed at 45.2 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1994 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:49:59+00:00",
+      "end": "2026-05-06T16:50:43+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T16:49:59Z lasting 44 s, xte peaked at 4.03 m while mean CN0 stayed at 45.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.1965 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:55:55+00:00",
+      "end": "2026-05-06T16:56:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T16:55:55Z lasting 44 s, xte peaked at 5.16 m while mean CN0 stayed at 45.9 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9065 N / -97.1961 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:56:10+00:00",
+      "end": "2026-05-06T16:56:28+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T16:56:10Z lasting 18 s, xte peaked at 0.31 m while mean CN0 stayed at 45.2 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1987 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:01:51+00:00",
+      "end": "2026-05-06T17:02:34+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T17:01:51Z lasting 43 s, xte peaked at 8.40 m while mean CN0 stayed at 45.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.1959 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:02:01+00:00",
+      "end": "2026-05-06T17:02:22+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T17:02:01Z lasting 21 s, xte peaked at 0.34 m while mean CN0 stayed at 45.3 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2021 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:02:02+00:00",
+      "end": "2026-05-06T17:02:20+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T17:02:02Z lasting 18 s, xte peaked at 0.36 m while mean CN0 stayed at 45.8 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1984 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:07:46+00:00",
+      "end": "2026-05-06T17:08:30+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T17:07:46Z lasting 44 s, xte peaked at 8.30 m while mean CN0 stayed at 45.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9065 N / -97.1955 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:13:50+00:00",
+      "end": "2026-05-06T17:14:15+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T17:13:50Z lasting 25 s, xte peaked at 0.27 m while mean CN0 stayed at 46.0 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1978 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:13:53+00:00",
+      "end": "2026-05-06T17:14:14+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T17:13:53Z lasting 21 s, xte peaked at 0.29 m while mean CN0 stayed at 45.3 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1953 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:13:57+00:00",
+      "end": "2026-05-06T17:14:15+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T17:13:57Z lasting 18 s, xte peaked at 0.21 m while mean CN0 stayed at 45.6 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2013 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:25:43+00:00",
+      "end": "2026-05-06T17:26:06+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T17:25:43Z lasting 23 s, xte peaked at 0.25 m while mean CN0 stayed at 44.8 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1946 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:31:40+00:00",
+      "end": "2026-05-06T17:31:58+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T17:31:40Z lasting 18 s, xte peaked at 0.35 m while mean CN0 stayed at 44.7 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1970 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:37:37+00:00",
+      "end": "2026-05-06T17:37:55+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T17:37:37Z lasting 18 s, xte peaked at 0.24 m while mean CN0 stayed at 45.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1965 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:49:24+00:00",
+      "end": "2026-05-06T17:49:42+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T17:49:24Z lasting 18 s, xte peaked at 0.20 m while mean CN0 stayed at 45.3 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2030 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:49:25+00:00",
+      "end": "2026-05-06T17:49:43+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T17:49:25Z lasting 18 s, xte peaked at 0.35 m while mean CN0 stayed at 45.1 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1995 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:49:27+00:00",
+      "end": "2026-05-06T17:49:46+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T17:49:27Z lasting 19 s, xte peaked at 0.27 m while mean CN0 stayed at 45.5 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1961 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T17:55:20+00:00",
+      "end": "2026-05-06T17:55:43+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T17:55:20Z lasting 23 s, xte peaked at 0.26 m while mean CN0 stayed at 45.3 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2027 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:07:10+00:00",
+      "end": "2026-05-06T18:07:35+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T18:07:10Z lasting 25 s, xte peaked at 0.26 m while mean CN0 stayed at 45.2 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1984 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:07:18+00:00",
+      "end": "2026-05-06T18:07:36+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T18:07:18Z lasting 18 s, xte peaked at 0.20 m while mean CN0 stayed at 46.1 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2019 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:13:08+00:00",
+      "end": "2026-05-06T18:13:31+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T18:13:08Z lasting 23 s, xte peaked at 0.20 m while mean CN0 stayed at 44.4 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2016 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:19:02+00:00",
+      "end": "2026-05-06T18:19:20+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T18:19:02Z lasting 18 s, xte peaked at 0.27 m while mean CN0 stayed at 44.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2039 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:30:00+00:00",
+      "end": "2026-05-06T19:00:00+00:00",
+      "class": "JAMMING",
+      "tractors": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "action": "HALT_AND_REPORT",
+      "confidence": 0.65,
+      "evidence": [
+        "CN0 degradation without ionospheric cause: mean CN0 fell to 27.7 dB-Hz on T3 with min_sats=4 at 2026-05-06T18:30:30Z; quiet baseline CN0 ~45 dB-Hz, sats ~12.",
+        "Satellite count bottomed at 4 on T3 at 2026-05-06T18:30:00Z (baseline 12).",
+        "3-tractor fleet simultaneously degraded; consistent with a single wide-area RF source, not three independent equipment faults."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:30:44+00:00",
+      "end": "2026-05-06T18:31:27+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T18:30:44Z lasting 43 s, xte peaked at 2.90 m while mean CN0 stayed at 32.5 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.2008 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:30:49+00:00",
+      "end": "2026-05-06T18:31:21+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T18:30:49Z lasting 32 s, xte peaked at 0.57 m while mean CN0 stayed at 37.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1973 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:36:41+00:00",
+      "end": "2026-05-06T18:37:23+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T18:36:41Z lasting 42 s, xte peaked at 1.09 m while mean CN0 stayed at 32.8 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9065 N / -97.2003 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:42:36+00:00",
+      "end": "2026-05-06T18:43:19+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T18:42:36Z lasting 43 s, xte peaked at 0.56 m while mean CN0 stayed at 35.1 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9066 N / -97.2002 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:42:42+00:00",
+      "end": "2026-05-06T18:43:19+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T18:42:42Z lasting 37 s, xte peaked at 2.69 m while mean CN0 stayed at 31.3 dB-Hz with 8 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2027 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:48:31+00:00",
+      "end": "2026-05-06T18:49:14+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T18:48:31Z lasting 43 s, xte peaked at 4.46 m while mean CN0 stayed at 30.8 dB-Hz with 9 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9065 N / -97.2022 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:48:32+00:00",
+      "end": "2026-05-06T18:49:08+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T18:48:32Z lasting 36 s, xte peaked at 0.82 m while mean CN0 stayed at 35.3 dB-Hz with 10 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1997 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:54:26+00:00",
+      "end": "2026-05-06T18:55:10+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T18:54:26Z lasting 44 s, xte peaked at 3.35 m while mean CN0 stayed at 31.7 dB-Hz with 9 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2021 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:54:27+00:00",
+      "end": "2026-05-06T18:55:10+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T18:54:27Z lasting 43 s, xte peaked at 0.91 m while mean CN0 stayed at 35.7 dB-Hz with 8 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1994 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:00:30+00:00",
+      "end": "2026-05-06T19:00:56+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T19:00:30Z lasting 26 s, xte peaked at 0.25 m while mean CN0 stayed at 44.8 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2016 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:00:32+00:00",
+      "end": "2026-05-06T19:00:56+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T19:00:32Z lasting 24 s, xte peaked at 0.37 m while mean CN0 stayed at 45.2 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1992 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:06:26+00:00",
+      "end": "2026-05-06T19:06:52+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T19:06:26Z lasting 26 s, xte peaked at 0.37 m while mean CN0 stayed at 44.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1953 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:12:26+00:00",
+      "end": "2026-05-06T19:12:44+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T19:12:26Z lasting 18 s, xte peaked at 0.29 m while mean CN0 stayed at 45.9 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1950 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:24:20+00:00",
+      "end": "2026-05-06T19:24:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T19:24:20Z lasting 19 s, xte peaked at 0.26 m while mean CN0 stayed at 45.8 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2003 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:36:09+00:00",
+      "end": "2026-05-06T19:36:30+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T19:36:09Z lasting 21 s, xte peaked at 0.25 m while mean CN0 stayed at 44.6 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1998 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:47:57+00:00",
+      "end": "2026-05-06T19:48:29+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T19:47:57Z lasting 32 s, xte peaked at 0.48 m while mean CN0 stayed at 43.7 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.2025 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:48:00+00:00",
+      "end": "2026-05-06T20:29:00+00:00",
+      "class": "EQUIPMENT_FAULT",
+      "tractors": [
+        "T2"
+      ],
+      "action": "SERVICE_MACHINE_OTHERS_CONTINUE",
+      "confidence": 0.8,
+      "evidence": [
+        "base_link_ok dropped to 0.13 on T2 (quiet baseline 1.00) at 2026-05-06T20:16:00Z.",
+        "Other tractors in the fleet remain within the quiet-period baseline, and no SDA storm or RFI report corroborates a wide-area cause."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:53:50+00:00",
+      "end": "2026-05-06T19:54:14+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T19:53:50Z lasting 24 s, xte peaked at 0.30 m while mean CN0 stayed at 44.0 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1964 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:53:50+00:00",
+      "end": "2026-05-06T19:54:15+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T19:53:50Z lasting 25 s, xte peaked at 0.30 m while mean CN0 stayed at 44.9 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2022 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:59:49+00:00",
+      "end": "2026-05-06T20:00:19+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T19:59:49Z lasting 30 s, xte peaked at 0.74 m while mean CN0 stayed at 44.4 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2021 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:05:42+00:00",
+      "end": "2026-05-06T20:06:06+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T20:05:42Z lasting 24 s, xte peaked at 0.24 m while mean CN0 stayed at 43.8 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1957 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:05:42+00:00",
+      "end": "2026-05-06T20:06:03+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T20:05:42Z lasting 21 s, xte peaked at 0.35 m while mean CN0 stayed at 44.7 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1983 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:11:31+00:00",
+      "end": "2026-05-06T20:12:10+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T20:11:31Z lasting 39 s, xte peaked at 0.73 m while mean CN0 stayed at 45.3 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.2014 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:17:37+00:00",
+      "end": "2026-05-06T20:17:55+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T20:17:37Z lasting 18 s, xte peaked at 0.27 m while mean CN0 stayed at 45.3 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1976 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:23:23+00:00",
+      "end": "2026-05-06T20:24:03+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T20:23:23Z lasting 40 s, xte peaked at 0.52 m while mean CN0 stayed at 44.6 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.2008 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:23:30+00:00",
+      "end": "2026-05-06T20:23:49+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T20:23:30Z lasting 19 s, xte peaked at 0.22 m while mean CN0 stayed at 44.4 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1972 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:35:21+00:00",
+      "end": "2026-05-06T20:35:44+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T20:35:21Z lasting 23 s, xte peaked at 0.21 m while mean CN0 stayed at 44.5 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1967 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:41:17+00:00",
+      "end": "2026-05-06T20:41:41+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T20:41:17Z lasting 24 s, xte peaked at 0.35 m while mean CN0 stayed at 45.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2032 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:41:17+00:00",
+      "end": "2026-05-06T20:41:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T20:41:17Z lasting 22 s, xte peaked at 0.37 m while mean CN0 stayed at 45.1 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1997 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T20:59:04+00:00",
+      "end": "2026-05-06T20:59:26+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T20:59:04Z lasting 22 s, xte peaked at 0.27 m while mean CN0 stayed at 45.2 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2024 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:05:00+00:00",
+      "end": "2026-05-06T21:05:23+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T21:05:00Z lasting 23 s, xte peaked at 0.45 m while mean CN0 stayed at 44.3 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1951 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:10:53+00:00",
+      "end": "2026-05-06T21:11:11+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T21:10:53Z lasting 18 s, xte peaked at 0.29 m while mean CN0 stayed at 45.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1983 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:22:46+00:00",
+      "end": "2026-05-06T21:23:07+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T21:22:46Z lasting 21 s, xte peaked at 0.27 m while mean CN0 stayed at 45.8 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2011 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:22:51+00:00",
+      "end": "2026-05-06T21:23:09+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T21:22:51Z lasting 18 s, xte peaked at 0.22 m while mean CN0 stayed at 45.6 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2036 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:28:39+00:00",
+      "end": "2026-05-06T21:29:01+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T21:28:39Z lasting 22 s, xte peaked at 0.32 m while mean CN0 stayed at 45.0 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2008 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:28:42+00:00",
+      "end": "2026-05-06T21:29:02+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T21:28:42Z lasting 20 s, xte peaked at 0.26 m while mean CN0 stayed at 45.2 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2032 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:34:35+00:00",
+      "end": "2026-05-06T21:34:54+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T21:34:35Z lasting 19 s, xte peaked at 0.22 m while mean CN0 stayed at 45.1 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2028 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:34:40+00:00",
+      "end": "2026-05-06T21:34:59+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T21:34:40Z lasting 19 s, xte peaked at 0.31 m while mean CN0 stayed at 45.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2003 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:40:33+00:00",
+      "end": "2026-05-06T21:40:56+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T21:40:33Z lasting 23 s, xte peaked at 0.35 m while mean CN0 stayed at 44.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2025 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:52:13+00:00",
+      "end": "2026-05-06T21:52:56+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T21:52:13Z lasting 43 s, xte peaked at 0.71 m while mean CN0 stayed at 44.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.2020 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:58:08+00:00",
+      "end": "2026-05-06T21:58:52+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T21:58:08Z lasting 44 s, xte peaked at 1.60 m while mean CN0 stayed at 45.3 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9063 N / -97.2016 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:02:30+00:00",
+      "end": "2026-05-06T22:24:00+00:00",
+      "class": "SPOOFING",
+      "tractors": [
+        "T3"
+      ],
+      "action": "HALT_CROSSCHECK_AND_REPORT",
+      "confidence": 0.8,
+      "evidence": [
+        "Cross-track-error rose to 5.04 m on T3 at 2026-05-06T22:12:00Z while mean CN0 stayed at 44.9 dB-Hz and sats_min=11 (link ok). Reported GNSS position is not trusted ground truth; cross-track channel disagrees with reported solution.",
+        "No RFI geolocation report overlaps this window; signal strength intact rules out jamming, and fleet-wide CN0 is nominal so ionospheric scintillation is ruled out.",
+        "Single-tractor geometry inconsistent with wide-area RF or storm cause; spoofing targets a specific receiver.",
+        "Contemporaneous SDA context: Kp=2.1, S4 peak 0.07 (storm thresholds Kp>=5, S4>=0.25)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:04:04+00:00",
+      "end": "2026-05-06T22:04:47+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T22:04:04Z lasting 43 s, xte peaked at 2.37 m while mean CN0 stayed at 44.5 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9065 N / -97.2012 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:04:13+00:00",
+      "end": "2026-05-06T22:04:37+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T22:04:13Z lasting 24 s, xte peaked at 0.35 m while mean CN0 stayed at 45.1 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1953 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:09:59+00:00",
+      "end": "2026-05-06T22:10:43+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T22:09:59Z lasting 44 s, xte peaked at 3.24 m while mean CN0 stayed at 44.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9064 N / -97.2009 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:10:14+00:00",
+      "end": "2026-05-06T22:10:33+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T22:10:14Z lasting 19 s, xte peaked at 0.20 m while mean CN0 stayed at 45.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1951 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:15:55+00:00",
+      "end": "2026-05-06T22:16:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T22:15:55Z lasting 44 s, xte peaked at 5.30 m while mean CN0 stayed at 44.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9068 N / -97.2007 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:16:09+00:00",
+      "end": "2026-05-06T22:16:29+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T22:16:09Z lasting 20 s, xte peaked at 0.28 m while mean CN0 stayed at 45.6 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1946 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:21:51+00:00",
+      "end": "2026-05-06T22:22:34+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T22:21:51Z lasting 43 s, xte peaked at 5.48 m while mean CN0 stayed at 45.1 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9063 N / -97.2002 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:27:57+00:00",
+      "end": "2026-05-06T22:28:18+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T22:27:57Z lasting 21 s, xte peaked at 0.24 m while mean CN0 stayed at 44.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2000 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:27:59+00:00",
+      "end": "2026-05-06T22:28:18+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T22:27:59Z lasting 19 s, xte peaked at 0.27 m while mean CN0 stayed at 45.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2036 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:33:50+00:00",
+      "end": "2026-05-06T22:34:16+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T22:33:50Z lasting 26 s, xte peaked at 0.26 m while mean CN0 stayed at 45.0 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1972 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:33:50+00:00",
+      "end": "2026-05-06T22:34:14+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T22:33:50Z lasting 24 s, xte peaked at 0.20 m while mean CN0 stayed at 44.6 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2032 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:39:46+00:00",
+      "end": "2026-05-06T22:40:10+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T22:39:46Z lasting 24 s, xte peaked at 0.35 m while mean CN0 stayed at 44.9 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1968 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:51:37+00:00",
+      "end": "2026-05-06T22:52:02+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T22:51:37Z lasting 25 s, xte peaked at 0.36 m while mean CN0 stayed at 44.8 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1964 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:51:37+00:00",
+      "end": "2026-05-06T22:52:02+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T22:51:37Z lasting 25 s, xte peaked at 0.21 m while mean CN0 stayed at 44.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1987 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:51:39+00:00",
+      "end": "2026-05-06T22:52:03+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T22:51:39Z lasting 24 s, xte peaked at 0.36 m while mean CN0 stayed at 46.0 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2024 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:57:33+00:00",
+      "end": "2026-05-06T22:57:59+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T22:57:33Z lasting 26 s, xte peaked at 0.37 m while mean CN0 stayed at 45.3 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1984 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:57:37+00:00",
+      "end": "2026-05-06T22:57:58+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T22:57:37Z lasting 21 s, xte peaked at 0.27 m while mean CN0 stayed at 45.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1961 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T22:57:38+00:00",
+      "end": "2026-05-06T22:57:56+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T22:57:38Z lasting 18 s, xte peaked at 0.36 m while mean CN0 stayed at 45.6 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2019 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:03:29+00:00",
+      "end": "2026-05-06T23:03:47+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T23:03:29Z lasting 18 s, xte peaked at 0.33 m while mean CN0 stayed at 45.1 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2017 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:03:32+00:00",
+      "end": "2026-05-06T23:03:54+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T23:03:32Z lasting 22 s, xte peaked at 0.28 m while mean CN0 stayed at 44.6 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1956 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:09:26+00:00",
+      "end": "2026-05-06T23:09:48+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T23:09:26Z lasting 22 s, xte peaked at 0.27 m while mean CN0 stayed at 45.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2014 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:09:27+00:00",
+      "end": "2026-05-06T23:09:46+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T23:09:27Z lasting 19 s, xte peaked at 0.23 m while mean CN0 stayed at 44.6 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.1953 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:15:22+00:00",
+      "end": "2026-05-06T23:15:45+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T23:15:22Z lasting 23 s, xte peaked at 0.28 m while mean CN0 stayed at 44.6 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.1950 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:21:15+00:00",
+      "end": "2026-05-06T23:21:39+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T2"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T2 at 2026-05-06T23:21:15Z lasting 24 s, xte peaked at 0.29 m while mean CN0 stayed at 46.1 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9070 N / -97.2006 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:21:19+00:00",
+      "end": "2026-05-06T23:21:40+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T23:21:19Z lasting 21 s, xte peaked at 0.27 m while mean CN0 stayed at 44.4 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1946 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:33:06+00:00",
+      "end": "2026-05-06T23:33:25+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T23:33:06Z lasting 19 s, xte peaked at 0.25 m while mean CN0 stayed at 44.9 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9072 N / -97.2035 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:39:03+00:00",
+      "end": "2026-05-06T23:39:21+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T23:39:03Z lasting 18 s, xte peaked at 0.24 m while mean CN0 stayed at 45.7 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2032 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:44:57+00:00",
+      "end": "2026-05-06T23:45:23+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T23:44:57Z lasting 26 s, xte peaked at 0.33 m while mean CN0 stayed at 45.5 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1961 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:44:58+00:00",
+      "end": "2026-05-06T23:45:22+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T23:44:58Z lasting 24 s, xte peaked at 0.26 m while mean CN0 stayed at 45.0 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2028 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:50:56+00:00",
+      "end": "2026-05-06T23:51:19+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T23:50:56Z lasting 23 s, xte peaked at 0.42 m while mean CN0 stayed at 45.5 dB-Hz with 11 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9069 N / -97.1956 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:56:49+00:00",
+      "end": "2026-05-06T23:57:10+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T3"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T3 at 2026-05-06T23:56:49Z lasting 21 s, xte peaked at 0.23 m while mean CN0 stayed at 44.7 dB-Hz with 13 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.1954 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    },
+    {
+      "start": "2026-05-06T23:56:55+00:00",
+      "end": "2026-05-06T23:57:14+00:00",
+      "class": "MULTIPATH",
+      "tractors": [
+        "T1"
+      ],
+      "action": "CONTINUE_FALSE_ALARM",
+      "confidence": 0.8,
+      "evidence": [
+        "Short cross-track transient on T1 at 2026-05-06T23:56:55Z lasting 19 s, xte peaked at 0.28 m while mean CN0 stayed at 45.2 dB-Hz with 12 sats - CN0 and sats normal rule out jamming/ionosphere.",
+        "Geolocation 46.9071 N / -97.2024 W falls in the recurring multipath band (~46.907 N) observed in dev-label episodes TRN-11/TRN-12; interpret as reflection off nearby obstacle, not a guidance threat (action CONTINUE_FALSE_ALARM)."
+      ]
+    }
+  ]
+}
