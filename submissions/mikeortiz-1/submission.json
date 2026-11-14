@@ -1,0 +1,23 @@
+{
+  "participant": {
+    "github_handle": "mikeortiz-1",
+    "display_name": "TEST (organizers, not a competitor)"
+  },
+  "repository_url": "https://github.com/mikeortiz-1/straight-rows-test",
+  "detections": [
+    {
+      "start": "2026-05-06T01:00:00+00:00",
+      "end": "2026-05-06T01:57:00+00:00",
+      "class": "EQUIPMENT_FAULT",
+      "tractors": [
+        "T1"
+      ],
+      "action": "SERVICE_MACHINE_OTHERS_CONTINUE",
+      "confidence": 0.1,
+      "evidence": [
+        "TEST entry from the Straight Rows organizers, checking the submission pipeline. Not a competitor.",
+        "First detection of the unmodified starter baseline: EQUIPMENT_FAULT on T1 from 2026-05-06T01:00:00+00:00 to 2026-05-06T01:57:00+00:00. All other baseline detections are dropped on purpose."
+      ]
+    }
+  ]
+}
