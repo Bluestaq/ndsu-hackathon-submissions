@@ -1,0 +1,139 @@
+{
+  "participant": {
+    "github_handle": "reno-ogden"
+  },
+  "repository_url": "https://github.com/reno-ogden/straight-rows",
+  "detections": [
+    {
+      "start": "2026-05-06T01:00:00+00:00",
+      "end": "2026-05-06T02:00:00+00:00",
+      "tractors": [
+        "T1"
+      ],
+      "class": "EQUIPMENT_FAULT",
+      "action": "SERVICE_MACHINE_OTHERS_CONTINUE",
+      "confidence": 0.5,
+      "evidence": [
+        "T1 2026-05-06 01:00-02:00Z: mean C/N0 44.2 dB-Hz (vs 45.0 in prior 30 min working); not in this detection T2,T3 45.0; min C/N0 7.0; median satellites 12.",
+        "Guidance-monitor cross-track error (separate channel, not derived from reported position) median 0.01 m, max 0.33 m (not in this detection: median 0.01 m); RTK_FIXED 100%, NO_FIX 0%; RTK link up 100% (not in this detection: 100%).",
+        "Regional S4 0.034-0.070 (below the 0.2 scintillation level); Kp 2.5; Dst min -114 nT (SDA timestamps' meaning, interval start or end, is not documented).",
+        "Attributed EQUIPMENT_FAULT (machine-specific): antenna dropouts to min C/N0 7.0 dB-Hz vs 27.4 on T2,T3; recommend servicing T1 while other machines continue.",
+        "Per-minute EQUIPMENT_FAULT rule true on T1 58/60 min. Same-tractor gaps of at most 180 s are bridged, so the interval includes such minutes.",
+        "No RFI report timestamped between 2026-05-06 00:50Z and 02:30Z; absence of a report does not show that no interference occurred."
+      ]
+    },
+    {
+      "start": "2026-05-06T02:12:00+00:00",
+      "end": "2026-05-06T02:54:00+00:00",
+      "tractors": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "class": "JAMMING",
+      "action": "HALT_AND_REPORT",
+      "confidence": 0.5,
+      "evidence": [
+        "T1,T2,T3 2026-05-06 02:12-02:54Z: mean C/N0 34.2 dB-Hz (vs 44.8 in prior 30 min working); min C/N0 9.0; median satellites 9.",
+        "Guidance-monitor cross-track error (separate channel, not derived from reported position) median 0.25 m, max 25.66 m; RTK_FIXED 11%, NO_FIX 1%; RTK link up 100%.",
+        "Regional S4 0.057-0.076 (below the 0.2 scintillation level); Kp 2.5; Dst min -95 nT (SDA timestamps' meaning, interval start or end, is not documented).",
+        "Attributed JAMMING: per-minute rule = C/N0 below 38 dB-Hz with S4 below 0.2 (here S4 0.057-0.076); regional scintillation was low, so the rule does not attribute the loss to space weather. The rule does not use RFI reports.",
+        "Per-minute JAMMING rule true on T1 42/42 min, T2 33/42 min, T3 41/42 min. Same-tractor gaps of at most 180 s are bridged, so the interval includes such minutes. Same-cause runs on different tractors starting within 300 s of a previous end are merged into one detection, so a listed tractor need not be affected for the whole interval.",
+        "RFI: RFI-003 timestamped 2026-05-06 02:38Z (+27 min from onset), confidence 0.57, centre 1.8 km from the mean reported position of T1,T2,T3 (ellipse 3.5x1.91 km). Whether an RFI timestamp is observation or report time is not documented; the attribution rules do not use RFI reports."
+      ]
+    },
+    {
+      "start": "2026-05-06T13:00:00+00:00",
+      "end": "2026-05-06T16:00:00+00:00",
+      "tractors": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "class": "SPACE_WEATHER",
+      "action": "HALT_OR_DEGRADED_MODE",
+      "confidence": 0.5,
+      "evidence": [
+        "T1,T2,T3 2026-05-06 13:00-16:00Z: mean C/N0 34.9 dB-Hz (vs 45.0 in prior 30 min working); min C/N0 13.5; median satellites 11.",
+        "Guidance-monitor cross-track error (separate channel, not derived from reported position) median 0.22 m, max 4.48 m; RTK_FIXED 0%, NO_FIX 0%; RTK link up 100%.",
+        "Regional S4 0.428-0.460 (at/above the 0.2 scintillation level); Kp 6.8, 3; Dst min -38 nT (SDA timestamps' meaning, interval start or end, is not documented).",
+        "Attributed SPACE_WEATHER: per-minute rule = all three tractors below 38 dB-Hz together with S4 >= 0.2 (here S4 0.428-0.460); a regional cause fits, a single-machine fault does not.",
+        "Per-minute SPACE_WEATHER rule true on T1 180/180 min, T2 180/180 min, T3 180/180 min. Same-cause runs on different tractors starting within 300 s of a previous end are merged into one detection, so a listed tractor need not be affected for the whole interval.",
+        "No RFI report timestamped between 2026-05-06 12:50Z and 16:30Z; absence of a report does not show that no interference occurred."
+      ]
+    },
+    {
+      "start": "2026-05-06T16:35:00+00:00",
+      "end": "2026-05-06T17:12:00+00:00",
+      "tractors": [
+        "T1"
+      ],
+      "class": "SPOOFING",
+      "action": "HALT_CROSSCHECK_AND_REPORT",
+      "confidence": 0.5,
+      "evidence": [
+        "T1 2026-05-06 16:35-17:12Z: mean C/N0 45.0 dB-Hz (vs 45.0 in prior 30 min working); not in this detection T2,T3 45.0; min C/N0 27.8; median satellites 12.",
+        "Guidance-monitor cross-track error (separate channel, not derived from reported position) median 4.47 m, max 8.54 m (not in this detection: median 0.01 m); RTK_FIXED 100%, NO_FIX 0%; RTK link up 100% (not in this detection: 100%).",
+        "Regional S4 0.038-0.063 (below the 0.2 scintillation level); Kp 3; Dst min -17 nT (SDA timestamps' meaning, interval start or end, is not documented).",
+        "Attributed SPOOFING: guidance error above 1 m on T1 with mean C/N0 45.0 dB-Hz (no signal-health collapse), neighbours 45.0.",
+        "Per-minute SPOOFING rule true on T1 37/37 min.",
+        "No RFI report timestamped between 2026-05-06 16:25Z and 17:42Z; absence of a report does not show that no interference occurred."
+      ]
+    },
+    {
+      "start": "2026-05-06T18:30:00+00:00",
+      "end": "2026-05-06T19:00:00+00:00",
+      "tractors": [
+        "T1",
+        "T3"
+      ],
+      "class": "JAMMING",
+      "action": "HALT_AND_REPORT",
+      "confidence": 0.5,
+      "evidence": [
+        "T1,T3 2026-05-06 18:30-19:00Z: mean C/N0 34.6 dB-Hz (vs 45.0 in prior 30 min working); not in this detection T2 39.3; min C/N0 10.6; median satellites 9.",
+        "Guidance-monitor cross-track error (separate channel, not derived from reported position) median 0.23 m, max 6.23 m (not in this detection: median 0.01 m); RTK_FIXED 12%, NO_FIX 0%; RTK link up 100% (not in this detection: 100%).",
+        "Regional S4 0.047-0.085 (below the 0.2 scintillation level); Kp 2.3; Dst min -13 nT (SDA timestamps' meaning, interval start or end, is not documented).",
+        "Attributed JAMMING: per-minute rule = C/N0 below 38 dB-Hz with S4 below 0.2 (here S4 0.047-0.085); regional scintillation was low, so the rule does not attribute the loss to space weather. The rule does not use RFI reports.",
+        "Per-minute JAMMING rule true on T1 24/30 min, T3 30/30 min. Same-tractor gaps of at most 180 s are bridged, so the interval includes such minutes. Same-cause runs on different tractors starting within 300 s of a previous end are merged into one detection, so a listed tractor need not be affected for the whole interval.",
+        "No RFI report timestamped between 2026-05-06 18:20Z and 19:30Z; absence of a report does not show that no interference occurred."
+      ]
+    },
+    {
+      "start": "2026-05-06T19:48:00+00:00",
+      "end": "2026-05-06T20:28:00+00:00",
+      "tractors": [
+        "T2"
+      ],
+      "class": "EQUIPMENT_FAULT",
+      "action": "SERVICE_MACHINE_OTHERS_CONTINUE",
+      "confidence": 0.5,
+      "evidence": [
+        "T2 2026-05-06 19:48-20:28Z: mean C/N0 45.0 dB-Hz (vs 45.0 in prior 30 min working); not in this detection T1,T3 45.0; min C/N0 27.9; median satellites 12.",
+        "Guidance-monitor cross-track error (separate channel, not derived from reported position) median 0.02 m, max 0.83 m (not in this detection: median 0.01 m); RTK_FIXED 70%, NO_FIX 0%; RTK link up 70% (not in this detection: 100%).",
+        "Regional S4 0.026-0.070 (below the 0.2 scintillation level); Kp 2.3; Dst min -20 nT (SDA timestamps' meaning, interval start or end, is not documented).",
+        "Attributed EQUIPMENT_FAULT (machine-specific): RTK correction link up 70% vs 100% on T1,T3; recommend servicing T2 while other machines continue.",
+        "Per-minute EQUIPMENT_FAULT rule true on T2 19/40 min. Same-tractor gaps of at most 180 s are bridged, so the interval includes such minutes.",
+        "No RFI report timestamped between 2026-05-06 19:38Z and 20:58Z; absence of a report does not show that no interference occurred."
+      ]
+    },
+    {
+      "start": "2026-05-06T21:55:00+00:00",
+      "end": "2026-05-06T22:24:00+00:00",
+      "tractors": [
+        "T3"
+      ],
+      "class": "SPOOFING",
+      "action": "HALT_CROSSCHECK_AND_REPORT",
+      "confidence": 0.5,
+      "evidence": [
+        "T3 2026-05-06 21:55-22:24Z: mean C/N0 45.0 dB-Hz (vs 45.0 in prior 30 min working); not in this detection T1,T2 45.0; min C/N0 27.1; median satellites 12.",
+        "Guidance-monitor cross-track error (separate channel, not derived from reported position) median 2.99 m, max 5.48 m (not in this detection: median 0.01 m); RTK_FIXED 100%, NO_FIX 0%; RTK link up 100% (not in this detection: 100%).",
+        "Regional S4 0.020-0.054 (below the 0.2 scintillation level); Kp 2.1; Dst min -27 nT (SDA timestamps' meaning, interval start or end, is not documented).",
+        "Attributed SPOOFING: guidance error above 1 m on T3 with mean C/N0 45.0 dB-Hz (no signal-health collapse), neighbours 45.0.",
+        "Per-minute SPOOFING rule true on T3 29/29 min.",
+        "No RFI report timestamped between 2026-05-06 21:45Z and 22:54Z; absence of a report does not show that no interference occurred."
+      ]
+    }
+  ]
+}
